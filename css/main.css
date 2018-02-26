@@ -1,15 +1,15 @@
+/* General styles */
 .container {
   max-width: 960px;
   margin: 0 auto; }
-
-.navigation {
-  float: right; }
-  .navigation li {
-    display: inline-block;
-    list-style-type: none;
-    margin-left: 1.5em; }
-  .navigation a {
-    display: block;
-    text-decoration: none; }
+  .container .navigation {
+    float: right;
+    background-color: #E0BAD7; }
+    .container .navigation li {
+      display: inline-block; }
+    .container .navigation a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
