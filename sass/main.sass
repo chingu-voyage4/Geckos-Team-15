@@ -76,13 +76,41 @@ ul, li
 		margin-right: 0
 		padding-right: 0
 
+.hamburger-menu
+	display: none
+
 .menu
 	.dropdown-menu
 		display: none
-
+		li
+			border-right: none
+	ul li:hover > .dropdown-menu
+		display: block
 .btn
 	background: $medium-aquamarine
 	padding: 10px 
+
+@media (max-width: 640px)
+	.menu 
+		display: none
+	.intro
+		justify-items: center
+		align-items: center
+
+		.btn
+			display: none
+
+	.hamburger-menu
+		display: flex
+		flex-direction: column
+		.menu-line
+			background: black
+			display: block
+			height: 5px
+			margin: 0 0 7px
+			width: 35px
+			justify-self: center
+			align-self: center
 
 @media (min-width: 500px)
 	.intro,
