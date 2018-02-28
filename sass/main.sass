@@ -1,9 +1,11 @@
-/* General styles */
+/* Start of General styles */
 $thistle: #E0BAD7
 $medium-aquamarine: #61D095
 $ocean-green: #48BF84
 $illuminating-emerald: #439775
 $japanese-indigo: #2A4747
+$white: #ffffff
+$jet: #333333
 $body-font: 'Roboto', sans-serif
 @mixin display-grid 
 	display: -ms-grid
@@ -14,7 +16,7 @@ $body-font: 'Roboto', sans-serif
 	box-sizing: border-box
 
 a:focus
-	border: 4px solid yellow
+	border-bottom: 2px solid $jet
 
 html
 	font-family: $body-font
@@ -43,8 +45,14 @@ ul, li
 	margin: 0
 	padding: 0
 
-header
-	/* autoprefixer: off
+/* End of General styles */
+/* Start of Header styles */
+.intro
+	margin-bottom: 10px
+
+.menu,
+.intro
+	border: 1px solid $jet
 	width: 90%
 	margin-left: 5vw
 	margin-right: 5vw
@@ -52,22 +60,33 @@ header
 	h1
 		margin: 0 0 0.5em
 		font-size: 1.8rem
-	nav
-		ul
-			display: -webkit-box
-			display: -ms-flexbox
-			display: flex
-			margin-bottom: 4px
-			-webkit-box-pack: justify
-			-ms-flex-pack: justify
-			justify-content: space-between
-		li:last-child
-			border: none
-			margin-right: 0
-			padding-right: 0
+	ul
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		margin-bottom: 4px
+		-webkit-box-pack: justify
+		-ms-flex-pack: justify
+		justify-content: space-between
+	li
+		justify-items: center
+		align-content: center
+	li:last-child
+		border: none
+		margin-right: 0
+		padding-right: 0
+
+.menu
+	.dropdown-menu
+		display: none
+
+.btn
+	background: $medium-aquamarine
+	padding: 10px 
 
 @media (min-width: 500px)
-	header
+	.intro,
+	.menu
 		display: -webkit-box
 		display: -ms-flexbox
 		display: flex
@@ -79,9 +98,11 @@ header
 		align-items: flex-end
 		h1
 			margin: 0 1em 0 0
+	.menu
+		justify-content: center
 
 @media (min-width: 300px)
-	header nav li
+	.menu li
 		-webkit-box-flex: 1
 		-ms-flex: auto
 		flex: auto
@@ -90,10 +111,10 @@ header
 		border-right: 1px solid #000
 
 @media (min-width: 580px)
-	header nav ul
+	.menu ul
 		-ms-flex-wrap: wrap
 		flex-wrap: wrap
-
+/* End of Header styles */
 .hero
 	display: grid
 	grid-template-columns: 1fr 1fr 1fr
