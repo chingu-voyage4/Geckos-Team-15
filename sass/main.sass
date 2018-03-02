@@ -88,7 +88,11 @@ ul, li
 		display: block
 .btn
 	background: $medium-aquamarine
-	padding: 10px 
+	padding: 10px
+.container
+    width: 90%
+    margin-left: 5vw
+    margin-right: 5vw 
 
 @media (max-width: 640px)
 	.menu 
@@ -111,6 +115,10 @@ ul, li
 			width: 35px
 			justify-self: center
 			align-self: center
+@media (max-width: 640px)
+    .half-block
+        float: none !important
+        width: 100% !important
 
 @media (min-width: 500px)
 	.intro,
@@ -188,6 +196,28 @@ ul, li
 		font-size: calc(0.75rem + 1vw)
 		line-height: 1.5
 		margin: 0
+
+.row
+  width: 100%
+  display: inline-block
+  .half-block
+    float: left
+    width: 50%
+    margin-bottom: 20px
+    padding: 10px
+
+.article-header
+  font-weight: 600
+  font-size: 1.8rem
+  line-height: 2rem
+  margin-bottom: 10px
+  margin-top: 10px
+
+.marginT20
+  margin-top: 20px
+
+.marginT50
+  margin-top: 50px
 
 @media (max-width: 880px)
 	.hero
