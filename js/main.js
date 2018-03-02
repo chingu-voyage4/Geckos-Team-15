@@ -2,3 +2,29 @@
 var copy = document.querySelector(".cp");
 var year = new Date().getFullYear();
 copy.textContent += year;
+
+//start of slideshow banner js
+var i = 0;
+var images = [];
+var time = 5000;
+
+// image list
+images[0] = "Geckos-Team-15/images/thomashafeneth-holding-flowers-unsplash.jpg";
+images[1] = "Geckos-Team-15/images/irenedavila-watering-unsplash.jpg";
+images[2] = "Geckos-Team-15/images/markusspiske-tomatoes-unsplash.jpg";
+images[3] = "Geckos-Team-15/images/jellekevanooteghem-child-unsplash.jpg";
+
+// change image
+function changeImage(){
+	document.slide.src = images[i];
+
+	if (i < images.length - 1){
+		i++;
+	} else {
+		i = 0;
+	}
+
+	setTimeout("changeImage()", time);
+}
+
+window.onload = changeImage();
