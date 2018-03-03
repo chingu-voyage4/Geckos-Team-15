@@ -16,20 +16,20 @@
 </head>
 
 <body class="container">
-	<header role="header">
+	<header role="header" id="home">
 			<div class="intro">
 				<h1><a href="#" class="logo">SAFE</a></h1>
 				<img src="images/logo-sm.jpg" class="img-logo">
 				<a href="#" class="btn">Donate Now</a>
 			</div>
-			<a class="hamburger-menu" href="#">
-		    <span class="menu-line"></span>
-		    <span class="menu-line"></span>
-		    <span class="menu-line"></span>
-		  </a>
+			<a class="hamburger-menu" href="#" onclick="openNav()">
+				<span class="menu-line"></span>
+				<span class="menu-line"></span>
+				<span class="menu-line"></span>
+			</a>
 			<nav class="menu" role="navigation">
 				<ul>    
-					<li><a href="#">Welcome</a></li>
+					<li><a href="#home">Welcome</a></li>
 					<li><a href="#">About SAFE</a>
 							<ul class="dropdown-menu">
 								<li><a href="#">Learn</a></li>
@@ -42,6 +42,25 @@
 					<li><a href="#">Take Action</a></li>
 				</ul>
 			</nav>
+
+			<div id="mobile-nav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<ul>    
+						<li><a href="index.html">Welcome</a></li>
+						<li><a href="#">About SAFE</a>
+								<ul>
+									<li><a href="#">Learn</a></li>
+									<li><a href="#">Activities</a></li>
+									<li><a href="#">Take Action</a></li>
+								</ul>
+						</li>
+						<li><a href="#">Learn</a></li>
+						<li><a href="#">Activities</a></li>
+						<li><a href="#">Take Action</a></li>
+					</ul>
+				</div>
+			</div>
 		</header>
 
 		<!-- Banner Slideshow -->
@@ -111,8 +130,8 @@
 		</main>
 					
 		<footer>
-					<p><span class="cp">&copy; </span> SAFE Gardening</p>
-			</footer>
+			<p><span class="cp">&copy; </span> SAFE Gardening</p>
+		</footer>
 
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
