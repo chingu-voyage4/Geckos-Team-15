@@ -32,12 +32,14 @@ ul, li {
 
 /* End of General styles */
 /* Start of Header styles */
+header {
+  margin-bottom: 15px; }
+
 .intro {
   margin-bottom: 10px; }
 
 .menu,
 .intro {
-  border: 1px solid #333333;
   width: 90%;
   margin-left: 5vw;
   margin-right: 5vw;
@@ -58,7 +60,8 @@ ul, li {
   .menu li,
   .intro li {
     justify-items: center;
-    align-content: center; }
+    align-content: center;
+    position: relative; }
   .menu li:last-child,
   .intro li:last-child {
     border: none;
@@ -69,11 +72,39 @@ ul, li {
   display: none; }
 
 .menu .dropdown-menu {
-  display: none; }
+  display: none;
+  transition: all 1s ease-in-out; }
   .menu .dropdown-menu li {
-    border-right: none; }
-.menu ul li:hover > .dropdown-menu {
-  display: block; }
+    box-shadow: 0 4px 16px rgba(20, 23, 28, 0.25);
+    background: white;
+    padding: 10px;
+    width: 100%; }
+  .menu .dropdown-menu .tip {
+    width: 90px;
+    height: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
+    margin-top: -15px; }
+    .menu .dropdown-menu .tip:after {
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background: #ffffff;
+      transform: rotate(45deg);
+      top: 8px;
+      left: 50%;
+      box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5); }
+.menu li:hover > .dropdown-menu, .menu li:focus > .dropdown-menu {
+  transition-delay: 0s;
+  display: block;
+  position: absolute;
+  right: -35px;
+  margin-top: 18px;
+  z-index: 1;
+  background: #ffffff;
+  text-align: left; }
 
 .btn {
   background: #61D095;
@@ -97,7 +128,7 @@ ul, li {
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 5%;
   width: 100%;
   text-align: center;
   margin-top: 30px; }
@@ -107,8 +138,7 @@ ul, li {
     .overlay-content ul li:last-child {
       border: none; }
   .overlay-content ul li > ul {
-    display: flex;
-    justify-content: space-evenly; }
+    display: block; }
     .overlay-content ul li > ul li {
       border: none; }
       .overlay-content ul li > ul li a {
@@ -185,8 +215,7 @@ ul, li {
     -ms-flex: auto;
     flex: auto;
     margin-right: 1em;
-    padding-right: 1em;
-    border-right: 1px solid #000; } }
+    padding-right: 1em; } }
 @media (min-width: 580px) {
   .menu ul {
     -ms-flex-wrap: wrap;
