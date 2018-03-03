@@ -15,9 +15,6 @@ $body-font: 'Roboto', sans-serif
 	-webkit-box-sizing: border-box
 	box-sizing: border-box
 
-a:focus
-	border-bottom: 2px solid $jet
-
 html
 	font-family: $body-font
 	line-height: 1.3em
@@ -90,9 +87,64 @@ ul, li
 	background: $medium-aquamarine
 	padding: 10px
 .container
-    width: 90%
-    margin-left: 5vw
-    margin-right: 5vw 
+	width: 90%
+	margin-left: 5vw
+	margin-right: 5vw 
+
+.overlay
+	height: 100%
+	width: 0
+	position: fixed
+	z-index: 1
+	top: 0
+	left: 0
+	background-color: $medium-aquamarine
+	overflow-x: hidden
+	transition: 0.5s
+
+.overlay-content
+	position: relative
+	top: 25%
+	width: 100%
+	text-align: center
+	margin-top: 30px
+	ul li
+		border-bottom: 1px solid $white
+		padding: 10px
+		&:last-child
+			border: none
+	ul li > ul
+		display: flex
+		justify-content: space-evenly
+		li 
+			border: none
+			a
+				font-size: 0.9em
+
+.overlay
+	a
+		padding: 8px
+		text-decoration: none
+		font-size: 36px
+		color: $white
+		display: block
+		transition: 0.3s
+		&:hover, &:focus
+			color: $jet
+	.closebtn
+		position: absolute
+		top: 20px
+		right: 45px
+		font-size: 60px
+
+@media screen and (max-height: 450px)
+	.overlay
+		a
+			font-size: 20px
+		.closebtn
+			font-size: 40px
+			top: 15px
+			right: 35px
 
 @media (max-width: 640px)
 	.menu 
@@ -116,9 +168,9 @@ ul, li
 			justify-self: center
 			align-self: center
 @media (max-width: 640px)
-    .half-block
-        float: none !important
-        width: 100% !important
+	.half-block
+		float: none !important
+		width: 100% !important
 
 @media (min-width: 500px)
 	.intro,
@@ -198,26 +250,26 @@ ul, li
 		margin: 0
 
 .row
-  width: 100%
-  display: inline-block
-  .half-block
-    float: left
-    width: 50%
-    margin-bottom: 20px
-    padding: 10px
+	width: 100%
+	display: inline-block
+	.half-block
+		float: left
+		width: 50%
+		margin-bottom: 20px
+		padding: 10px
 
 .article-header
-  font-weight: 600
-  font-size: 1.8rem
-  line-height: 2rem
-  margin-bottom: 10px
-  margin-top: 10px
+	font-weight: 600
+	font-size: 1.8rem
+	line-height: 2rem
+	margin-bottom: 10px
+	margin-top: 10px
 
 .marginT20
-  margin-top: 20px
+	margin-top: 20px
 
 .marginT50
-  margin-top: 50px
+	margin-top: 50px
 
 @media (max-width: 880px)
 	.hero
