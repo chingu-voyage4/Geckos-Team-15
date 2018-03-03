@@ -76,9 +76,13 @@ header {
   transition: all 1s ease-in-out; }
   .menu .dropdown-menu li {
     box-shadow: 0 4px 16px rgba(20, 23, 28, 0.25);
-    background: white;
+    background: #ffffff;
     padding: 10px;
     width: 100%; }
+    .menu .dropdown-menu li:hover, .menu .dropdown-menu li:focus {
+      background: #439775; }
+      .menu .dropdown-menu li:hover a, .menu .dropdown-menu li:focus a {
+        color: #ffffff; }
   .menu .dropdown-menu .tip {
     width: 90px;
     height: 15px;

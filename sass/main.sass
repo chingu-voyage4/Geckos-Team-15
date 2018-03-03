@@ -84,9 +84,13 @@ header
 		transition: all 1s ease-in-out
 		li
 			box-shadow: 0 4px 16px rgba(20,23,28,.25)
-			background: white
+			background: $white
 			padding: 10px
 			width: 100%
+			&:hover, &:focus
+				background: $illuminating-emerald
+				a
+					color: $white
 
 		.tip
 			width: 90px
