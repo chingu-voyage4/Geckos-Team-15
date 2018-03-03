@@ -1,293 +1,44 @@
-/* Start of General styles */
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+/*
+Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.
+        on line 93 of sass/main.sass
 
-a:focus {
-  border-bottom: 2px solid #333333; }
+88: 		display: block
+89: .btn
+90: 	background: $medium-aquamarine
+91: 	padding: 10px
+92: .container
+93:     width: 90%
+94:     margin-left: 5vw
+95:     margin-right: 5vw 
+96: 
+97: @media (max-width: 640px)
+98: 	.menu 
 
-html {
-  font-family: "Roboto", sans-serif;
-  line-height: 1.3em;
-  text-rendering: optimizeLegibility;
-  -webkit-font-kerning: normal;
-  font-kerning: normal;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
-
-body {
-  margin: 5vw auto;
-  text-align: center; }
-
-h1 {
-  line-height: 1.2; }
-
-a {
-  color: black;
-  text-decoration: none; }
-
-ul, li {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-/* End of General styles */
-/* Start of Header styles */
-.intro {
-  margin-bottom: 10px; }
-
-.menu,
-.intro {
-  border: 1px solid #333333;
-  width: 90%;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  text-transform: uppercase; }
-  .menu h1,
-  .intro h1 {
-    margin: 0 0 0.5em;
-    font-size: 1.8rem; }
-  .menu ul,
-  .intro ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 4px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-  .menu li,
-  .intro li {
-    justify-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center; }
-  .menu li:last-child,
-  .intro li:last-child {
-    border: none;
-    margin-right: 0;
-    padding-right: 0; }
-
-.hamburger-menu {
-  display: none; }
-
-.menu .dropdown-menu {
-  display: none; }
-  .menu .dropdown-menu li {
-    border-right: none; }
-
-.menu ul li:hover > .dropdown-menu {
-  display: block; }
-
-.btn {
-  background: #61D095;
-  padding: 10px; }
-
-.container {
-  width: 90%;
-  margin-left: 5vw;
-  margin-right: 5vw; }
-
-@media (max-width: 640px) {
-  .menu {
-    display: none; }
-  .intro {
-    justify-items: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-    .intro .btn {
-      display: none; }
-  .hamburger-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .hamburger-menu .menu-line {
-      background: black;
-      display: block;
-      height: 5px;
-      margin: 0 0 7px;
-      width: 35px;
-      justify-self: center;
-      -ms-flex-item-align: center;
-      align-self: center; } }
-
-@media (max-width: 640px) {
-  .half-block {
-    float: none !important;
-    width: 100% !important; } }
-
-@media (min-width: 500px) {
-  .intro,
-  .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end; }
-    .intro h1,
-    .menu h1 {
-      margin: 0 1em 0 0; }
-  .menu {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; } }
-
-@media (min-width: 300px) {
-  .menu li {
-    -webkit-box-flex: 1;
-    -ms-flex: auto;
-    flex: auto;
-    margin-right: 1em;
-    padding-right: 1em;
-    border-right: 1px solid #000; } }
-
-@media (min-width: 580px) {
-  .menu ul {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; } }
-
-/* End of Header styles */
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap: 2em;
-  margin: 2rem 0;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .hero h1 {
-    text-transform: uppercase;
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-    font-size: calc(2.2rem + 3vw);
-    margin-left: 1rem;
-    margin-right: 1rem; }
-  .hero h2 {
-    text-transform: uppercase;
-    border: 1px solid black;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 1rem 0.5rem 0.6rem;
-    font-size: 1.2rem;
-    margin: 0;
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    -ms-flex-item-align: self-start;
-    align-self: self-start; }
-  .hero img {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    grid-column: 1 / -1;
-    grid-row: 1 / 4;
-    -o-object-fit: fill;
-    object-fit: fill;
-    opacity: 0.6; }
-  .hero p {
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
-    -ms-flex-item-align: center;
-    align-self: center;
-    width: 66%;
-    justify-self: center;
-    font-size: calc(0.75rem + 1vw);
-    line-height: 1.5;
-    margin: 0; }
-
-.row {
-  width: 100%;
-  display: inline-block; }
-  .row .half-block {
-    float: left;
-    width: 50%;
-    margin-bottom: 20px;
-    padding: 10px; }
-
-.article-header {
-  font-weight: 600;
-  font-size: 1.8rem;
-  line-height: 2rem;
-  margin-bottom: 10px;
-  margin-top: 10px; }
-
-.marginT20 {
-  margin-top: 20px; }
-
-.marginT50 {
-  margin-top: 50px; }
-
-@media (max-width: 880px) {
-  .hero {
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
-
-@media (max-width: 880px) {
-  .hero h2 {
-    grid-column: 2 / 4; } }
-
-.talking-points {
-  /* autoprefixer: off */
-  background: #191919;
-  color: #efefef;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 2rem; }
-  .talking-points div {
-    /* autoprefixer: off */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1em 5% 1em;
-    padding: 0 1rem; }
-    .talking-points div h2 {
-      margin: 1em 0 0.25em;
-      font-size: 1.8rem; }
-    .talking-points div img {
-      -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-      order: -1;
-      max-width: 100px; }
-    .talking-points div p {
-      font-size: 0.9rem;
-      margin-bottom: 0; }
-
-footer {
-  width: 90%;
-  margin-top: 1rem;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  padding: 1rem;
-  font-size: 0.8em; }
-  footer p {
-    margin: 0; }
-  footer a {
-    text-decoration: underline; }
-
-.warning {
-  color: #eee;
-  background: #bc0000;
-  padding: 3rem 4rem;
-  font-size: 150%;
-  line-height: 1.4;
-  text-align: left;
-  margin-bottom: 1em; }
-  .warning a {
-    color: white;
-    text-decoration: underline; }
-
-@supports (display: grid) {
-  .warning {
-    display: none; } }
+Backtrace:
+sass/main.sass:93
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:494:in `block in tabulate'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `each'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `each_with_index'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:452:in `tabulate'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:417:in `_to_tree'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 93 of sass/main.sass\A \A 88: 		display: block\A 89: .btn\A 90: 	background: $medium-aquamarine\A 91: 	padding: 10px\A 92: .container\A 93:     width: 90%\A 94:     margin-left: 5vw\A 95:     margin-right: 5vw \A 96: \A 97: @media (max-width: 640px)\A 98: 	.menu "; }
