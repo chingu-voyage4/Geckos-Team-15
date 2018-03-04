@@ -44,12 +44,13 @@ ul, li
 
 /* End of General styles */
 /* Start of Header styles */
+header
+	margin-bottom: 15px
 .intro
 	margin-bottom: 10px
 
 .menu,
 .intro
-	border: 1px solid $jet
 	width: 90%
 	margin-left: 5vw
 	margin-right: 5vw
@@ -68,6 +69,7 @@ ul, li
 	li
 		justify-items: center
 		align-content: center
+		position: relative
 	li:last-child
 		border: none
 		margin-right: 0
@@ -79,11 +81,45 @@ ul, li
 .menu
 	.dropdown-menu
 		display: none
+		transition: all 1s ease-in-out
 		li
-			border-right: none
-	ul li:hover > .dropdown-menu
+			box-shadow: 0 4px 16px rgba(20,23,28,.25)
+			background: $white
+			padding: 10px
+			width: 100%
+			&:hover, &:focus
+				background: $illuminating-emerald
+				a
+					color: $white
+
+		.tip
+			width: 90px
+			height: 15px
+			position: relative
+			overflow: hidden
+			box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5)
+			margin-top: -15px
+			&:after
+				content: ""
+				position: absolute
+				width: 35px
+				height: 35px
+				background: $white
+				transform: rotate(45deg)
+				top: 8px
+				left: 50%
+				box-shadow: -1px -1px 10px -2px rgba(0, 0, 0, 0.5)
+
+	li:hover > .dropdown-menu, li:focus > .dropdown-menu
+		transition-delay: 0s
 		display: block
-		
+		position: absolute
+		right: -35px
+		margin-top: 18px
+		z-index: 1
+		background: $white
+		text-align: left
+
 .btn
 	background: $medium-aquamarine
 	padding: 10px
@@ -106,7 +142,7 @@ ul, li
 
 .overlay-content
 	position: relative
-	top: 25%
+	top: 5%
 	width: 100%
 	text-align: center
 	margin-top: 30px
@@ -116,8 +152,7 @@ ul, li
 		&:last-child
 			border: none
 	ul li > ul
-		display: flex
-		justify-content: space-evenly
+		display: block
 		li 
 			border: none
 			a
@@ -199,7 +234,6 @@ ul, li
 		flex: auto
 		margin-right: 1em
 		padding-right: 1em
-		border-right: 1px solid #000
 
 @media (min-width: 580px)
 	.menu ul
