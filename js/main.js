@@ -6,7 +6,7 @@ copy.textContent += year;
 //start of slideshow banner js
 var i = 0;
 var images = [];
-var time = 5000;
+var time = 10000;
 
 // image list
 images[0] = "images/thomashafeneth-holding-flowers-unsplash.jpg";
@@ -26,6 +26,26 @@ function changeImage(){
 
 	setTimeout("changeImage()", time);
 }
+// change image by clicking arrows
+document.getElementById("nextBtn").addEventListener("click", function() {
+	if (i < images.length - 1) {
+		i++;
+		document.slide.src = images[i];
+	} else {
+		i = 0;
+		document.slide.src = images[i];
+	}
+});
+
+document.getElementById("prevBtn").addEventListener("click", function() {
+	if (i > 0) {
+		i--;
+		document.slide.src = images[i];
+	} else {
+		i = images.length - 1;
+		document.slide.src = images[i];
+	}
+});
 
 window.onload = changeImage();
 
