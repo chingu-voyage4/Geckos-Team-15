@@ -290,6 +290,51 @@ header {
     line-height: 1.5;
     margin: 0; }
 
+/* About section */
+.box1 {
+    grid-area: welcome;
+}
+
+.box2 {
+    grid-area: learn;
+}
+
+.box3 {
+    grid-area: donate;
+}
+
+.box4 {
+    grid-area: email;
+}
+
+.box5 {
+    grid-area: milkweed;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap:20px;
+    grid-template-areas: 
+        "welcome"
+        "learn"
+        "donate"
+        "email"
+        "milkweed";
+}
+
+@media (min-width: 560px) {
+    .wrapper {
+    display: grid;
+    align-content: center;
+    grid-gap: 2em;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(200px, auto);
+    grid-template-areas: "welcome welcome learn learn donate donate"
+                         "email email email milkweed milkweed milkweed";
+}
+    
+/* End of About section */
+
 .row {
   width: 100%;
   display: inline-block; }
