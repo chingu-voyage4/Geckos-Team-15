@@ -122,7 +122,10 @@ header
 
 .btn
 	background: $medium-aquamarine
-	padding: 10px
+	padding: 15px
+	border: none
+	border-radius: 3px
+	outline: none
 
 .container
 	width: 90%
@@ -255,14 +258,13 @@ header
 	-webkit-flex-align: center
 	-ms-flex-align: center
 	-webkit-align-items: center
-	margin-left: 5vw
 	margin-right: 5vw
 /*End of Slideshow styles*/
 
 .hero
 	display: grid
 	grid-template-columns: 1fr 1fr 1fr
-	grid-template-rows: 1fr 1fr 1fr 1fr
+	grid-template-rows: 70vh 1fr
 	grid-gap: 2em
 	margin: 2rem 0
 	justify-content: center
@@ -299,7 +301,6 @@ header
 		grid-row: 3 / 4
 		-ms-flex-item-align: center
 		align-self: center
-		width: 66%
 		justify-self: center
 		font-size: calc(0.75rem + 1vw)
 		line-height: 1.5
@@ -340,7 +341,7 @@ header
 	background: #191919
 	color: #efefef
 	display: grid
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
 	grid-gap: 2rem
 	div
 		/* autoprefixer: off
@@ -361,6 +362,11 @@ header
 		p
 			font-size: 0.9rem
 			margin-bottom: 0
+.actions
+	padding-top: 50px
+	padding-bottom: 10px
+.actions div > *
+	margin: 10px
 
 footer
 	width: 90%
