@@ -1,13 +1,27 @@
+@import main.sass
+
 main
 	text-align: justify
 	h2
 		text-align: center
 		font-size: 2em
-
+main > *
+	margin-left: 5vw
+	margin-right: 5vw
+main section
+	border-bottom: 2px solid #E0BAD7
+main section:last-child
+	border-bottom: none
 #history,
 #objectives
 	margin-top: 70px
 	margin-bottom: 70px
+	h1
+		font-size: 1.5em
+		margin-bottom: 10px
+
+#history
+	padding-bottom: 65px
 
 #directors,
 #advisors
@@ -20,19 +34,22 @@ main
 		width: 290px
 		height: 250px
 		margin-top: 10px
-		background: linear-gradient(135deg, #0099F7 , #F11712)
+		background: url("../images/member.png") no-repeat
+		background-position: center
+		background-size: contain
 		span
 			position: absolute
-			color: white
+			color: $ocean-green
 			font-size: 18px
-			top: 36px
+			bottom: -25px
 			left: 50%
 			z-index: 3
 			transform: translateX(-50%)
 			transition: 0.3s ease all
 		small
+			font-size: 0.9rem !important
 			position: absolute
-			color: white
+			color: $white
 			font-size: 18px
 			top: 36px
 			left: 50%
@@ -42,6 +59,8 @@ main
 			width: 100%
 			z-index: 3
 			transition: 0.3s ease all
+		&:hover
+			background: $medium-aquamarine
 		&:hover > small	
 			opacity: 1
 		&:hover > span	
@@ -49,5 +68,7 @@ main
 
 #directors,
 .profile
-	margin-bottom: 20px
+	margin-bottom: 45px
+	.js-tilt-glare
+		top: -8px !important
 	
