@@ -112,7 +112,10 @@ header {
 
 .btn {
   background: #61D095;
-  padding: 10px; }
+  padding: 15px;
+  border: none;
+  border-radius: 3px;
+  outline: none; }
 
 .container {
   width: 90%;
@@ -226,6 +229,7 @@ header {
     flex-wrap: wrap; } }
 /* End of Header styles */
 /* Start of Slideshow styles */
+
 @media (min-width: 780px) {
   #hero {
     display: grid;
@@ -274,7 +278,7 @@ header {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70vh 1fr;
   grid-gap: 2em;
   margin: 2rem 0;
   justify-content: center;
@@ -311,7 +315,6 @@ header {
     grid-row: 3/4;
     -ms-flex-item-align: center;
     align-self: center;
-    width: 66%;
     justify-self: center;
     font-size: calc(0.75rem + 1vw);
     line-height: 1.5;
@@ -350,7 +353,7 @@ header {
   background: #191919;
   color: #efefef;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 2rem; }
   .talking-points div {
     /* autoprefixer: off */
@@ -371,6 +374,13 @@ header {
     .talking-points div p {
       font-size: 0.9rem;
       margin-bottom: 0; }
+
+.actions {
+  padding-top: 50px;
+  padding-bottom: 10px; }
+
+.actions div > * {
+  margin: 10px; }
 
 footer {
   width: 90%;
