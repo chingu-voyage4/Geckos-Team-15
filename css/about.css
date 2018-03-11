@@ -229,31 +229,27 @@ header {
     flex-wrap: wrap; } }
 /* End of Header styles */
 /* Start of Slideshow styles */
-
-@media (min-width: 780px) {
+@media (min-width: 320px) and (max-width: 736px) {
   #hero {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 2em;
-    margin: 2rem 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70vh 1fr;
     justify-content: center;
     align-items: center;
     background-image: url("images/thomashafeneth-holding-flowers-unsplash.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     width: auto; }
 
   #hero h1 {
     text-transform: uppercase;
-    font-size: calc(2.2rem + 3vw);
-    margin-right: 1rem; }
+    font-size: calc(2.2rem + 3vw); }
 
   #hero p {
-    text-align: center;
-    margin: auto; }
+    text-align: center; }
 
   #hero button {
-    margin-top: 30%;
+    margin: 60px;
     background-color: rgba(224, 186, 215, 0.7);
     color: rgba(0, 0, 0, 0.7);
     font-size: 32px;
@@ -267,13 +263,42 @@ header {
     outline: 0; }
 
   .caption {
-    background-color: rgba(72, 191, 132, 0.7); }
+    background-color: rgba(72, 191, 132, 0.7); } }
+@media (min-width: 736px) and (max-width: 1600px) {
+  #hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70vh 1fr;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/thomashafeneth-holding-flowers-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto; }
 
-  #nextBtn {
-    float: right; }
+  #hero h1 {
+    text-transform: uppercase;
+    font-size: calc(2.2rem + 3vw); }
 
-  #prevBtn {
-    float: left; } }
+  #hero p {
+    text-align: center; }
+
+  #hero button {
+    margin: 60px;
+    background-color: rgba(224, 186, 215, 0.7);
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 32px;
+    border-radius: 20px; }
+
+  #hero button:hover {
+    background-color: #e0bad7;
+    color: black; }
+
+  #hero button:focus {
+    outline: 0; }
+
+  .caption {
+    background-color: rgba(72, 191, 132, 0.7); } }
 /*End of Slideshow styles */
 .hero {
   display: grid;
