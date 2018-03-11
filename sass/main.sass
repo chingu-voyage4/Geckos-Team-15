@@ -241,22 +241,50 @@ header
 		flex-wrap: wrap
 /* End of Header styles */
 /* Start of Slideshow styles*/
-.slideshow
-	display: flex
-	flex-direction: row
-	height: 350px
-	width: 90%
-	justify-content: center
-	align-items: center
-	display: -webkit-box
-	display: -webkit-flex
-	display: -moz-box
-	display: -ms-flexbox
-	-webkit-flex-align: center
-	-ms-flex-align: center
-	-webkit-align-items: center
-	margin-left: 5vw
-	margin-right: 5vw
+@media (min-width: 780px)
+	#hero
+		display: grid
+		grid-template-columns: 1fr
+		grid-template-rows: 1fr
+		grid-gap: 2em
+		margin: 2rem 0
+		justify-content: center
+		align-items: center
+		background-image: url('images/thomashafeneth-holding-flowers-unsplash.jpg')
+		background-repeat: no-repeat
+		width: auto
+
+	#hero h1
+		text-transform: uppercase
+		font-size: calc(2.2rem + 3vw)
+		margin-right: 1rem
+
+	#hero p
+		text-align: center
+		margin: auto
+
+	#hero button
+		margin-top: 30%
+		background-color: rgba(224, 186, 215, 0.7)
+		color: rgba(0, 0, 0, 0.7)
+		font-size: 32px
+		border-radius: 20px
+
+	#hero button:hover
+		background-color: #e0bad7
+		color: black
+
+	#hero button:focus
+		outline: 0
+
+	.caption
+		background-color: rgba(72, 191, 132, 0.7)
+
+	#nextBtn
+		float: right
+
+	#prevBtn
+		float: left
 /*End of Slideshow styles*/
 
 .hero
