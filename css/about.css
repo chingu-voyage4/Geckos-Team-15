@@ -361,12 +361,31 @@ header {
   margin-bottom: 10px;
   margin-top: 10px; }
 
+.hide {
+  display: none; }
+
+.show {
+  display: block !important; }
+
+.year-link.active {
+  font-weight: bold; }
+
+.article-block article {
+  width: 100%; }
+
+section.article-block {
+  display: none; }
+
 .left-align {
   text-align: left !important; }
 
 .article-body {
   font-size: 0.8rem;
   text-align: justify; }
+
+.year-nav {
+  display: flex;
+  justify-content: center; }
 
 .year-link {
   padding: 0 5px 0 5px; }
@@ -378,8 +397,10 @@ header {
   margin-bottom: 50px; }
 
 .read-more {
+  text-align: left;
   font-size: 0.8rem;
-  background: #61D095; }
+  background: #61D095;
+  border: none; }
 
 .marginT20 {
   margin-top: 20px; }
@@ -458,7 +479,8 @@ main {
   text-align: justify; }
   main h2 {
     text-align: center;
-    font-size: 2em; }
+    font-size: 2em;
+    margin-bottom: 8%; }
 
 main > * {
   margin-left: 5vw;
@@ -478,64 +500,74 @@ main section:last-child {
   #objectives h1 {
     font-size: 1.5em;
     margin-bottom: 10px; }
+  #history p,
+  #objectives p {
+    margin: 10px 0; }
 
 #history {
   padding-bottom: 65px; }
+  #history q:before {
+    content: open-quote; }
+  #history q:after {
+    content: close-quote; }
+  #history cite {
+    font-style: italic;
+    font-size: 0.9em; }
+
+#objectives ol li {
+  list-style-type: square; }
 
 #directors,
 #advisors {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap; }
-  #directors div,
-  #advisors div {
-    text-align: center;
-    padding: 5px;
-    width: 290px;
-    height: 250px;
-    margin-top: 10px;
-    background: url("../images/member.png") no-repeat;
-    background-position: center;
-    background-size: contain; }
-    #directors div span,
-    #advisors div span {
-      position: absolute;
-      color: #48BF84;
-      font-size: 18px;
-      bottom: -25px;
-      left: 50%;
-      z-index: 3;
-      transform: translateX(-50%);
-      transition: 0.3s ease all; }
-    #directors div small,
-    #advisors div small {
-      font-size: 0.9rem !important;
-      position: absolute;
-      color: #ffffff;
-      font-size: 18px;
-      top: 36px;
-      left: 50%;
-      transform: translateX(-50%) translateY(-10px);
-      opacity: 0;
-      display: inline-block;
-      width: 100%;
-      z-index: 3;
-      transition: 0.3s ease all; }
-    #directors div:hover,
-    #advisors div:hover {
-      background: #61D095; }
-    #directors div:hover > small,
-    #advisors div:hover > small {
-      opacity: 1; }
-    #directors div:hover > span,
-    #advisors div:hover > span {
-      opacity: 0; }
 
 #directors,
 .profile {
   margin-bottom: 45px; }
-  #directors .js-tilt-glare,
-  .profile .js-tilt-glare {
-    top: -8px !important; }
+
+.card-container {
+  cursor: pointer;
+  height: 260px;
+  perspective: 600px;
+  position: relative;
+  width: 255px;
+  margin-bottom: 45px; }
+
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  font-size: 11px; }
+  .card:hover {
+    transform: rotateY(180deg); }
+  .card .side {
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    text-align: center; }
+    .card .side img {
+      width: 100%;
+      height: auto; }
+    .card .side span {
+      margin-top: 20px;
+      display: block;
+      margin-bottom: 10px; }
+  .card .back {
+    background: #eaeaed;
+    color: #0087cc;
+    line-height: 142%;
+    text-align: center;
+    transform: rotateY(180deg);
+    padding-top: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify; }
 
 /*# sourceMappingURL=about.css.map */
