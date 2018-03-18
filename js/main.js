@@ -6,7 +6,7 @@ copy.textContent += year;
 //start of slideshow banner js
 var i = 0;
 var images = [];
-var time = 5000;
+var time = 7500;
 var counter = 0;
 
 // image list
