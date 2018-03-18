@@ -229,7 +229,7 @@ header {
     flex-wrap: wrap; } }
 /* End of Header styles */
 /* Start of Slideshow styles */
-@media (min-width: 320px) and (max-width: 736px) {
+@media (max-width: 736px) and (min-width: 320px) {
   #hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -263,8 +263,11 @@ header {
     outline: 0; }
 
   .caption {
-    background-color: rgba(72, 191, 132, 0.7); } }
-@media (min-width: 736px) and (max-width: 1600px) {
+    background-color: rgba(72, 191, 132, 0.7); }
+
+  .navBtns {
+    visibility: hidden; } }
+@media (max-width: 1600px) and (min-width: 736px) {
   #hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

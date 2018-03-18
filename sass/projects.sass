@@ -1,0 +1,28 @@
+@import main
+
+.hero
+	grid-template-rows: 30vh
+	padding-bottom: 2em
+	background: $illuminating-emerald
+	color: $white
+	h1
+		grid-row: 1
+	span
+		grid-column: 2
+		grid-row: 3
+	p
+		grid-row: 2
+		font-size: 14px
+	.btn
+		background: $thistle
+
+.details
+	text-align: justify
+	line-height: 1.3
+	ol li
+		list-style-type: square
+		margin: 10px 30px
+
+@media (max-width: 880px)
+	.hero span
+		grid-column: 2 / 4
