@@ -364,17 +364,6 @@ header {
   margin-bottom: 10px;
   margin-top: 10px; }
 
-section.article-block article {
-  display: none; }
-
-.to-top {
-  color: #61D095;
-  font-size: 0.9rem; }
-
-.load-more {
-  color: #61D095;
-  font-size: 0.9rem; }
-
 .hide {
   display: none; }
 
@@ -489,5 +478,30 @@ footer {
 @supports (display: grid) {
   .warning {
     display: none; } }
+main {
+  text-align: justify; }
+  main h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px; }
 
-/*# sourceMappingURL=main.css.map */
+main > * {
+  margin-left: 5vw;
+  margin-right: 5vw; }
+
+main section {
+  border-bottom: 2px solid #E0BAD7; }
+
+main section:last-child {
+  border-bottom: none; }
+
+#intro {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding-bottom: 65px; }
+
+#resources {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px; }
+
+/*# sourceMappingURL=learn-resources.css.map */

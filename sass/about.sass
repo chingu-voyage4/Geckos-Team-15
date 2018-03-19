@@ -1,0 +1,92 @@
+@import main.sass
+
+main
+	text-align: justify
+	h2
+		text-align: center
+		font-size: 2em
+		margin-bottom: 8%
+main > *
+	margin-left: 5vw
+	margin-right: 5vw
+main section
+	border-bottom: 2px solid #E0BAD7
+main section:last-child
+	border-bottom: none
+#history,
+#objectives
+	margin-top: 70px
+	margin-bottom: 70px
+	h1
+		font-size: 1.5em
+		margin-bottom: 10px
+	p
+		margin: 10px 0
+
+#history
+	padding-bottom: 65px
+	q:before
+		content: open-quote
+	q:after
+		content: close-quote
+	cite
+		font-style: italic
+		font-size: 0.9em
+
+#objectives
+	ol li
+		list-style-type: square 
+
+#directors,
+#advisors
+	display: flex
+	justify-content: space-around
+	flex-flow: row wrap
+	
+#directors,
+.profile
+	margin-bottom: 45px
+
+.card-container
+	cursor: pointer
+	height: 260px
+	perspective: 600px
+	position: relative
+	width: 255px
+	margin-bottom: 45px
+
+.card
+	height: 100%
+	position: absolute
+	transform-style: preserve-3d
+	transition: all 1s ease-in-out
+	width: 100%
+	font-size: 11px
+	&:hover
+		transform: rotateY(180deg)
+	.side
+		backface-visibility: hidden
+		border-radius: 6px
+		height: 100%
+		position: absolute
+		overflow: hidden
+		width: 100%
+		text-align: center
+		img
+			width: 100%
+			height: auto
+		span
+			margin-top: 20px
+			display: block
+			margin-bottom: 10px
+	.back
+		background: #eaeaed
+		color: #0087cc
+		line-height: 142%
+		text-align: center
+		transform: rotateY(180deg)
+		padding-top: 13px
+		padding-left: 10px
+		padding-right: 10px
+		text-align: justify
+	
