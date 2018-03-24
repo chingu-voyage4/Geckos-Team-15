@@ -39,4 +39,11 @@ ol {
     width: 55px;
     height: auto; }
 
+@media (max-width: 960px) {
+  .details article:nth-of-type(2) {
+    flex-direction: column;
+    align-items: center; }
+    .details article:nth-of-type(2) img {
+      margin-top: 30px; } }
+
 /*# sourceMappingURL=opals.css.map */
