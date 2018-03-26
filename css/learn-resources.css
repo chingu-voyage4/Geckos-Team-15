@@ -266,8 +266,11 @@ header {
     background-color: rgba(72, 191, 132, 0.7); }
 
   .navBtns {
+
+=======
     visibility: hidden; } }
 @media (max-width: 1600px) and (min-width: 736px) {
+
   #hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -363,6 +366,7 @@ header {
   line-height: 2rem;
   margin-bottom: 10px;
   margin-top: 10px; }
+
 
 section.article-block article {
   display: none; }
@@ -509,10 +513,5 @@ main section:last-child {
   margin-top: 70px;
   margin-bottom: 70px;
   padding-bottom: 65px; }
-
-#resources {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px; }
 
 /*# sourceMappingURL=learn-resources.css.map */
