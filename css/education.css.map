@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,+BAAsB;EACrB,UAAU,EAAE,IAAI;EAChB,kCAAE;IACD,aAAa,EAAE,IAAI;;AAEtB,eAAe;EACd,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,oCAAoC;EAC3D,kBAAkB,EAAE,KAAK;EACzB,QAAQ,EAAE,GAAG;EACb,uBAAO;IACN,OAAO,EAAE,IAAI;IACb,SAAS,EAAE,MAAM;IACjB,yBAAC;MACA,aAAa,EAAE,IAAI;MACnB,UAAU,EAAE,IAAI",
+"sources": ["../sass/education.sass"],
+"names": [],
+"file": "education.css"
+}
