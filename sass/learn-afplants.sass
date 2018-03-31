@@ -1,0 +1,48 @@
+body
+
+	text-align: justify
+
+.details
+	line-height: 1.5
+
+article
+	p
+		margin-bottom: 25px
+	img
+		width: 40%
+		height: 60%
+
+article:nth-of-type(2)
+	display: flex
+	justify-content: space-around
+
+article:nth-of-type(2), article:nth-of-type(3)
+	margin-bottom: 50px
+
+article:last-of-type
+	height: fit-content
+	margin-bottom: 10em
+	text-align: center
+	img
+		width: 70%	
+
+ol 
+	margin-left: 25px
+	li
+		list-style: square
+.share
+	text-align: center
+	a
+		margin: 0 10px
+		background: #61d094
+		padding: 20px
+	i
+		width: 55px
+		height: auto
+
+@media (max-width: 960px)
+	.details article:nth-of-type(2)
+		flex-direction: column
+		align-items: center
+		img
+			margin-top: 30px
