@@ -1,9 +1,26 @@
+@import main.sass
+
 body
 
 	text-align: justify
 
 .details
 	line-height: 1.5
+
+.resources-nav
+	text-align: center
+
+.hide
+	display: none
+
+.show
+	display: block
+
+.resources-nav span + span
+	margin-left: 2em
+
+.resources-nav a:hover
+	background-color: #61d095
 
 #article-header
 	color: #48bf84
@@ -57,7 +74,7 @@ ol
 		height: auto
 
 @media (max-width: 960px)
-	.details article:nth-of-type(2)
+	.details article:nth-of-type(2), article:nth-of-type(3), article:last-of-type
 		flex-direction: column
 		align-items: center
 		img
