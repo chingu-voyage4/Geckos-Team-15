@@ -4,25 +4,39 @@ body {
 .details {
   line-height: 1.5; }
 
+#article-header {
+  color: #48bf84; }
+
 article p {
   margin-bottom: 25px; }
-article img {
-  width: 40%;
-  height: 60%; }
 
 article:nth-of-type(2) {
   display: flex;
   justify-content: space-around; }
+  article:nth-of-type(2) img {
+    width: 50%;
+    height: 70%;
+    margin-top: 50px;
+    margin-left: 15px; }
 
-article:nth-of-type(2), article:nth-of-type(3) {
-  margin-bottom: 50px; }
+article:nth-of-type(3) {
+  display: flex;
+  justify-content: space-around; }
+  article:nth-of-type(3) img {
+    width: 20%;
+    margin-right: 25px; }
+  article:nth-of-type(3) p {
+    margin-top: 30px; }
 
 article:last-of-type {
-  height: fit-content;
-  margin-bottom: 10em;
-  text-align: center; }
+  display: flex;
+  justify-content: space-around; }
   article:last-of-type img {
-    width: 70%; }
+    width: 20%;
+    margin-left: 25px; }
+
+article:nth-of-type(2), article:nth-of-type(3), article:last-of-type {
+  margin-bottom: 50px; }
 
 ol {
   margin-left: 25px; }
