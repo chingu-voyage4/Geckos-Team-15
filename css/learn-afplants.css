@@ -492,11 +492,19 @@ footer {
 body {
   text-align: justify; }
 
+h1 {
+  margin-top: 25px; }
+
+footer {
+  text-align: center; }
+
 .details {
   line-height: 1.5; }
 
 .resources-nav {
-  text-align: center; }
+  text-align: center;
+  border-top: 2px solid #E0BAD7;
+  border-bottom: 2px solid #E0BAD7; }
 
 .hide {
   display: none; }
@@ -550,6 +558,7 @@ ol {
     list-style: square; }
 
 .share {
+  margin-top: 25px;
   text-align: center; }
   .share a {
     margin: 0 10px;
@@ -564,6 +573,7 @@ ol {
     flex-direction: column;
     align-items: center; }
     .details article:nth-of-type(2) img, article:nth-of-type(3) img, article:last-of-type img {
-      margin-top: 30px; } }
+      margin-top: 30px;
+      width: 50%; } }
 
 /*# sourceMappingURL=learn-afplants.css.map */
