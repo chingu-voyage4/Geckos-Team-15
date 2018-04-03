@@ -463,6 +463,7 @@ section.article-block {
   margin: 10px; }
 
 footer {
+  text-align: center;
   width: 90%;
   margin-top: 1rem;
   margin-left: 5vw;
@@ -495,8 +496,8 @@ body {
 h1 {
   margin-top: 25px; }
 
-footer {
-  text-align: center; }
+#resource-list {
+  margin-top: 50px; }
 
 .details {
   line-height: 1.5; }
@@ -504,7 +505,8 @@ footer {
 .resources-nav {
   text-align: center;
   border-top: 2px solid #E0BAD7;
-  border-bottom: 2px solid #E0BAD7; }
+  border-bottom: 2px solid #E0BAD7;
+  padding: 25px; }
 
 .hide {
   display: none; }
@@ -558,7 +560,8 @@ ol {
     list-style: square; }
 
 .share {
-  margin-top: 25px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   text-align: center; }
   .share a {
     margin: 0 10px;
