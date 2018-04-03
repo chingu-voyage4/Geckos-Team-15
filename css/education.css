@@ -1,7 +1,11 @@
 .details article:nth-of-type(2) {
   margin-top: 20px; }
-  .details article:nth-of-type(2) h5 {
-    margin-bottom: 25px; }
+.details h5 {
+  margin-bottom: 15px; }
+.details small {
+  display: block;
+  font-size: 0.8em;
+  margin-bottom: 25px; }
 
 .materials-grid {
   display: grid;
@@ -10,9 +14,16 @@
   grid-gap: 1em; }
   .materials-grid section {
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+    .materials-grid section div {
+      display: flex;
+      flex-direction: column; }
     .materials-grid section p {
       margin-bottom: 20px;
       margin-top: 20px; }
+    .materials-grid section .btn {
+      align-self: center; }
 
 /*# sourceMappingURL=education.css.map */
