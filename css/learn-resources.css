@@ -511,9 +511,6 @@ main > * {
   margin-left: 5vw;
   margin-right: 5vw; }
 
-main section {
-  border-bottom: 2px solid #E0BAD7; }
-
 main section:last-child {
   border-bottom: none; }
 
@@ -522,12 +519,15 @@ main section:last-child {
   padding-bottom: 50px; }
 
 .resources-nav {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 50px; }
 
 .resources-nav span + span {
   margin-left: 2em; }
 
-.resources-nav a:hover {
-  background-color: #61d095; }
+.resources-nav a {
+  padding: 10px; }
+  .resources-nav a:hover {
+    background-color: #61d095; }
 
 /*# sourceMappingURL=learn-resources.css.map */
