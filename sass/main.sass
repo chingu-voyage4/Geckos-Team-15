@@ -23,7 +23,7 @@ h1
 	line-height: 1.2
 
 a
-	color: black
+	color: $black
 	text-decoration: none
 
 ul, li
@@ -255,21 +255,20 @@ header
 
 	#hero button
 		margin: 60px
-		background-color: rgba(224, 186, 215, 0.7)
-		color: rgba(0, 0, 0, 0.7)
-		font-size: 32px
-		border-radius: 20px
+		color: $white
+		font-size: 4em
+		background: transparent
+		border: none
+		z-index: 3
 
 	#hero button:hover
-		background-color: #e0bad7
-		color: black
+		color: $black
 
 	#hero button:focus
 		outline: 0
 
-	.caption
-		background-color: rgba(72, 191, 132, 0.7)
-
+	.slideshow.navBtns
+		z-index: 3	
 	.navBtns
 		visibility: hidden
 
@@ -284,6 +283,7 @@ header
 		background-repeat: no-repeat
 		background-size: cover
 		width: auto
+		color: $white
 
 	#hero h1
 		text-transform: uppercase
@@ -293,24 +293,22 @@ header
 		text-align: center
 
 	#hero button
-		margin: 60px
-		background-color: rgba(224, 186, 215, 0.7)
-		color: rgba(0, 0, 0, 0.7)
-		font-size: 32px
-		border-radius: 20px
+		color: $white
+		font-size: 4em
+		background: transparent
+		border: none
+		z-index: 3
 
 	#hero button:hover
-		background-color: #e0bad7
-		color: black
+		color: $black
 
 	#hero button:focus
 		outline: 0
 
-	.caption
-		background-color: rgba(72, 191, 132, 0.7)
+	.slideshow.navBtns
+		z-index: 3	
 
 /*End of Slideshow styles*/
-
 .hero
 	display: grid
 	grid-template-columns: 1fr 1fr 1fr
@@ -319,6 +317,7 @@ header
 	margin: 2rem 0
 	justify-content: center
 	align-items: center
+	position: relative
 	h1
 		text-transform: uppercase
 		grid-column: 1 / -1
@@ -355,6 +354,13 @@ header
 		font-size: calc(0.75rem + 1vw)
 		line-height: 1.5
 		margin: 0
+.hero-overlay
+	position: absolute
+	top: 0
+	bottom: 0
+	background: $jet
+	width: 100%
+	opacity: 0.1
 
 .row
 	width: 100%
@@ -364,6 +370,9 @@ header
 		width: 50%
 		margin-bottom: 20px
 		padding: 10px
+	.fa-bullhorn
+		transform: rotate(-10deg)
+		color: $jet
 
 .article-header
 	font-weight: 500
@@ -438,6 +447,10 @@ section.article-block
 	.hero h2
 		grid-column: 2 / 4
 
+.fa-7x
+	margin-top: 10px
+	margin-bottom: 20px
+
 .talking-points
 	/* autoprefixer: off
 	background: $jet
@@ -456,11 +469,6 @@ section.article-block
 		h2
 			margin: 1em 0 0.25em
 			font-size: 1.8rem
-		img
-			-webkit-box-ordinal-group: 0
-			-ms-flex-order: -1
-			order: -1
-			max-width: 100px
 		p
 			font-size: 0.9rem
 			margin-bottom: 0
@@ -492,7 +500,7 @@ footer
 	text-align: left
 	margin-bottom: 1em
 	a
-		color: white
+		color: $white
 		text-decoration: underline
 
 @supports (display: grid)
