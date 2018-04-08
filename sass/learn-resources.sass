@@ -8,8 +8,6 @@ main
 main > *
 	margin-left: 5vw
 	margin-right: 5vw
-main section
-	border-bottom: 2px solid #E0BAD7
 main section:last-child
 	border-bottom: none
 
@@ -23,15 +21,18 @@ main section:last-child
 .show
 	display:block
 
+.resource-link
+	.active
+		font-weight:bold
+
 .resources-nav
 	text-align: center
+	margin-bottom: 50px
 
 .resources-nav span + span
 	margin-left: 2em
 
-.resources-nav a:hover
-	background-color: #61d095
-
-.resource-link
-	active
-		font-weight:bold
+.resources-nav a
+	padding: 10px
+	&:hover
+		background-color: #61d095
