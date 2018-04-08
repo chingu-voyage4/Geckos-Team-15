@@ -1,16 +1,16 @@
 Page = {
-    Next : function(year, el){
+    Next : function(id, el){
         $('.year-link').removeClass('active');
         $(el).addClass('active');
         $('.article-block').removeClass('show');
-        $('.article-block.'+year).addClass('show');
+        $('.article-block.'+id).addClass('show');
     }, 
-    LoadMore : function(year) {
-        $("#"+year+" article:hidden").slice(0, 4).slideDown();
-        if ($("#"+year+" article:hidden").length == 0) {
-            $("#lm"+year).fadeOut('slow');
+    LoadMore : function(id) {
+        $("#"+id+" article:hidden").slice(0, 4).slideDown();
+        if ($("#"+id+" article:hidden").length == 0) {
+            $("#lm"+id).fadeOut('slow');
         }
-        $('#'+year+'totop').removeClass('hide');
+        $('#'+id+'totop').removeClass('hide');
     }
 }
 
