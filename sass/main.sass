@@ -1,15 +1,4 @@
-/* Start of General styles */
-$thistle: #E0BAD7
-$medium-aquamarine: #61D095
-$ocean-green: #48BF84
-$illuminating-emerald: #439775
-$japanese-indigo: #2A4747
-$white: #ffffff
-$jet: #333333
-$body-font: 'Roboto', sans-serif
-@mixin display-grid 
-	display: -ms-grid
-	display: grid
+@import '_variables'
 
 *
 	-webkit-box-sizing: border-box
@@ -451,7 +440,7 @@ section.article-block
 
 .talking-points
 	/* autoprefixer: off
-	background: #191919
+	background: $jet
 	color: #efefef
 	display: grid
 	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))

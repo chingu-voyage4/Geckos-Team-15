@@ -159,7 +159,7 @@ header {
   display: block;
   transition: 0.3s; }
   .overlay a:hover, .overlay a:focus {
-    color: #333333; }
+    color: #011627; }
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -430,7 +430,7 @@ section.article-block {
     grid-column: 2/4; } }
 .talking-points {
   /* autoprefixer: off */
-  background: #191919;
+  background: #011627;
   color: #efefef;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
