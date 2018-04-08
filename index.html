@@ -9,6 +9,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<!-- Reset CSS - Meyerweb -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/solid.css" integrity="sha384-29Ax2Ao1SMo9Pz5CxU1KMYy+aRLHmOu6hJKgWiViCYpz3f9egAJNwjnKGgr+BXDN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/fontawesome.css" integrity="sha384-Lyz+8VfV0lv38W729WFAmn77iH5OSroyONnUva4+gYaQTic3iI2fnUKtDSpbVf0J" crossorigin="anonymous">
 	<!-- main CSS -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- favicon -->
@@ -18,7 +22,7 @@
 <body class="container">
 	<header role="header" id="home">
 			<div class="intro">
-				<h1><a href="#" class="logo">SAFE</a></h1>
+				<h1><a href="#" class="logo">SAFE Gardening</a></h1>
 				<img src="images/logo-sm.jpg" class="img-logo">
 				<a href="#" class="btn">Donate Now</a>
 			</div>
@@ -45,7 +49,7 @@
 							<ul class="dropdown-menu">
 								<div class="tip"></div>
 								<li><a href="activities-projects.html">Projects</a></li>
-								<li><a href="#">Milkweed Highway</a></li>
+								<li><a href="milkweed-highway.html">Milkweed Highway</a></li>
 							</ul>
 					</li>
 					<li><a href="take-action.html">Take Action</a></li>
@@ -70,7 +74,7 @@
 						<li><a href="#">Activities</a>
 							<ul>
 									<li><a href="activities-projects.html">Projects</a></li>
-									<li><a href="#">Milkweed Highway</a></li>
+									<li><a href="milkweed-highway.html">Milkweed Highway</a></li>
 								</ul>
 						</li>
 						<li><a href="take-action.html">Take Action</a></li>
@@ -81,6 +85,7 @@
 		
 		<main role="main">
 			<section class="hero" id="hero">
+				<div class="hero-overlay"></div>
 				<span class="slideshow navBtns">
 						<button id="prevBtn">&#8678;</button>
 				</span>
@@ -99,16 +104,16 @@
 			<section class="talking-points">
 				<div>
 					<h2>Welcome</h2>
-					<img src="images/world.png" alt="write description">
+					<i class="fab fa-pagelines fa-7x"></i>
 					<p>Please explore our website and find out how we are making gardens and landscapes healthier places by using allergy friendly plants.</p>
 				</div>
 				<div>
 					<h2>Learn</h2>
-					<img src="images/world.png" alt="write description">
+					<i class="fab fa-leanpub fa-7x"></i>
 					<p>Please explore our website and find out how we are making gardens and landscapes healthier places by using allergy friendly plants.</p>				</div>
 				<div>
 					<h2>Donate</h2>
-					<img src="images/world.png" alt="write description">
+					<i class="fas fa-donate fa-7x"></i>
 					<p>Please explore our website and find out how we are making gardens and landscapes healthier places by using allergy friendly plants.</p>
 				</div>
 			</section>
@@ -132,25 +137,30 @@
 				<div class="row">
 					<div class="half-block">
 						<div class = "article-header"><a href="#">Article 1</a></div>
+						<i class="fas fa-bullhorn fa-7x"></i>
 						<p class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nunc varius, bibendum tortor aiaculis mauris. Phasellus venenatis magna vel purus efficitur malesuada. Integer in metus id neque vehicula dictum vel nec augue. Mauris a magna eget enim feugiat ullamcorper non sed purus. Aliquam erat volutpat.</p>
 					</div>
 					<div class="half-block">
 						<div class = "article-header"><a href="#">Article 2</a></div>
+						<i class="fas fa-bullhorn fa-7x"></i>
 						<p class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nunc varius, bibendum tortor a, iaculis mauris. Phasellus venenatis magna vel purus efficitur malesuada. Integer in metus id neque vehicula dictum vel nec augue. Mauris a magna eget enim feugiat ullamcorper non sed purus. Aliquam erat volutpat.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="half-block">
 						<div class = "article-header"><a href="#">Article 3</a></div>
+						<i class="fas fa-bullhorn fa-7x"></i>
 						<p class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nunc varius, bibendum tortor a, iaculis mauris. Phasellus venenatis magna vel purus efficitur malesuada. Integer in metus id neque vehicula dictum vel nec augue. Mauris a magna eget enim feugiat ullamcorper non sed purus. Aliquam erat volutpat.</p>
 					</div>
 					<div class="half-block">
 						<div class = "article-header"><a href="#">Article 4</a></div>
+						<i class="fas fa-bullhorn fa-7x"></i>
 						<p class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nunc varius, bibendum tortor a, iaculis mauris. Phasellus venenatis magna vel purus efficitur malesuada. Integer in metus id neque vehicula dictum vel nec augue. Mauris a magna eget enim feugiat ullamcorper non sed purus. Aliquam erat volutpat.</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class = "article-header">POD: The Allergy-Fighting Garden</div>
+					<i class="fas fa-headphones fa-5x"></i>
 					<p class="article-body">Enjoy a podcast with guest Tom Ogren who provides important information about plants that cause allergies and asthma
 						and how to create beautiful landscapes that are non-allergenic. Go to the podcast titled "Allergy-Fighting Garden" atTova's Garden.
 					</p>
