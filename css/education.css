@@ -26,4 +26,13 @@
     .materials-grid section .btn {
       align-self: center; }
 
+@media (max-width: 880px) {
+  .details article > p {
+    padding-left: 0; }
+
+  .materials-grid section {
+    width: 80%;
+    display: block;
+    text-align: center; } }
+
 /*# sourceMappingURL=education.css.map */
