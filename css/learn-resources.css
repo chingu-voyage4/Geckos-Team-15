@@ -115,7 +115,9 @@ header {
   padding: 15px;
   border: none;
   border-radius: 3px;
-  outline: none; }
+  outline: none;
+  text-transform: uppercase;
+  color: #ffffff; }
 
 .container {
   width: 90%;
@@ -166,142 +168,8 @@ header {
   right: 45px;
   font-size: 60px; }
 
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px; }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px; } }
-@media (max-width: 640px) {
-  .menu {
-    display: none; }
-
-  .intro {
-    justify-items: center;
-    align-items: center; }
-    .intro .btn {
-      display: none; }
-
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column; }
-    .hamburger-menu .menu-line {
-      background: black;
-      display: block;
-      height: 5px;
-      margin: 0 0 7px;
-      width: 35px;
-      justify-self: center;
-      align-self: center; } }
-@media (max-width: 640px) {
-  .half-block {
-    float: none !important;
-    width: 100% !important; } }
-@media (min-width: 500px) {
-  .intro,
-  .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end; }
-    .intro h1,
-    .menu h1 {
-      margin: 0 1em 0 0; }
-
-  .menu {
-    justify-content: center; } }
-@media (min-width: 300px) {
-  .menu li {
-    -webkit-box-flex: 1;
-    -ms-flex: auto;
-    flex: auto;
-    margin-right: 1em;
-    padding-right: 1em; } }
-@media (min-width: 580px) {
-  .menu ul {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; } }
 /* End of Header styles */
 /* Start of Slideshow styles */
-@media (max-width: 736px) and (min-width: 320px) {
-  #hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70vh 1fr;
-    justify-content: center;
-    align-items: center;
-    background-image: url("images/thomashafeneth-holding-flowers-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto; }
-
-  #hero h1 {
-    text-transform: uppercase;
-    font-size: calc(2.2rem + 3vw); }
-
-  #hero p {
-    text-align: center; }
-
-  #hero button {
-    margin: 60px;
-    color: #ffffff;
-    font-size: 4em;
-    background: transparent;
-    border: none;
-    z-index: 3; }
-
-  #hero button:hover {
-    color: #000000; }
-
-  #hero button:focus {
-    outline: 0; }
-
-  .slideshow.navBtns {
-    z-index: 3; }
-
-  .navBtns {
-    visibility: hidden; } }
-@media (max-width: 1600px) and (min-width: 736px) {
-  #hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70vh 1fr;
-    justify-content: center;
-    align-items: center;
-    background-image: url("images/thomashafeneth-holding-flowers-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    color: #ffffff; }
-
-  #hero h1 {
-    text-transform: uppercase;
-    font-size: calc(2.2rem + 3vw); }
-
-  #hero p {
-    text-align: center; }
-
-  #hero button {
-    color: #ffffff;
-    font-size: 4em;
-    background: transparent;
-    border: none;
-    z-index: 3; }
-
-  #hero button:hover {
-    color: #000000; }
-
-  #hero button:focus {
-    outline: 0; }
-
-  .slideshow.navBtns {
-    z-index: 3; } }
 /*End of Slideshow styles */
 .hero {
   display: grid;
@@ -312,6 +180,8 @@ header {
   justify-content: center;
   align-items: center;
   position: relative; }
+  .hero > * {
+    text-shadow: 2px 2px 2px #000000; }
   .hero h1 {
     text-transform: uppercase;
     grid-column: 1/-1;
@@ -348,14 +218,6 @@ header {
     font-size: calc(0.75rem + 1vw);
     line-height: 1.5;
     margin: 0; }
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  background: #011627;
-  width: 100%;
-  opacity: 0.1; }
 
 .row {
   width: 100%;
@@ -434,12 +296,6 @@ section.article-block {
 .marginT50 {
   margin-top: 50px; }
 
-@media (max-width: 880px) {
-  .hero {
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
-@media (max-width: 880px) {
-  .hero h2 {
-    grid-column: 2/4; } }
 .fa-7x {
   margin-top: 10px;
   margin-bottom: 20px; }
@@ -501,6 +357,151 @@ footer {
 @supports (display: grid) {
   .warning {
     display: none; } }
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px; }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px; } }
+@media (max-width: 640px) {
+  .menu {
+    display: none; }
+
+  .intro {
+    justify-items: center;
+    align-items: center; }
+    .intro .btn {
+      display: none; }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column; }
+    .hamburger-menu .menu-line {
+      background: black;
+      display: block;
+      height: 5px;
+      margin: 0 0 7px;
+      width: 35px;
+      justify-self: center;
+      align-self: center; } }
+@media (max-width: 640px) {
+  .half-block {
+    float: none !important;
+    width: 100% !important; } }
+@media (min-width: 500px) {
+  .intro,
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+    .intro h1,
+    .menu h1 {
+      margin: 0 1em 0 0; }
+
+  .menu {
+    justify-content: center; } }
+@media (min-width: 300px) {
+  #hero {
+    color: #ffffff; }
+
+  .menu li {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    margin-right: 1em;
+    padding-right: 1em; } }
+@media (min-width: 580px) {
+  .menu ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
+@media (max-width: 880px) {
+  .hero {
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+@media (max-width: 880px) {
+  .hero h2 {
+    grid-column: 2/4; } }
+@media (max-width: 736px) and (min-width: 310px) {
+  #hero {
+    display: block;
+    background-image: url("images/thomashafeneth-holding-flowers-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    color: #ffffff;
+    padding-right: 20px;
+    padding-left: 20px; }
+
+  #hero h1 {
+    text-transform: uppercase;
+    font-size: calc(2.2rem + 3vw); }
+
+  #hero p {
+    text-align: center; }
+
+  #hero button {
+    margin: 60px;
+    color: #ffffff;
+    font-size: 4em;
+    background: transparent;
+    border: none;
+    z-index: 3; }
+
+  #hero button:hover {
+    color: #000000; }
+
+  #hero button:focus {
+    outline: 0; }
+
+  .slideshow.navBtns {
+    z-index: 3; }
+
+  .navBtns {
+    display: none; }
+
+  .talking-points {
+    grid-template-columns: 1fr; } }
+@media (max-width: 1600px) and (min-width: 736px) {
+  #hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70vh 1fr;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/thomashafeneth-holding-flowers-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    color: #ffffff; }
+
+  #hero h1 {
+    text-transform: uppercase;
+    font-size: calc(2.2rem + 3vw); }
+
+  #hero p {
+    text-align: center; }
+
+  #hero button {
+    color: #ffffff;
+    font-size: 4em;
+    background: transparent;
+    border: none;
+    z-index: 3; }
+
+  #hero button:hover {
+    color: #000000; }
+
+  #hero button:focus {
+    outline: 0; }
+
+  .slideshow.navBtns {
+    z-index: 3; } }
 main {
   text-align: justify; }
   main h1 {
