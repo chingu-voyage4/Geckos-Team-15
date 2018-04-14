@@ -1,8 +1,3 @@
-//Auto update footer copyright year
-var copy = document.querySelector(".cp");
-var year = new Date().getFullYear();
-copy.textContent += year;
-
 //start of slideshow banner js
 var i = 0;
 var images = [];
@@ -48,12 +43,3 @@ document.getElementById("prevBtn").addEventListener("click", function() {
 });
 
 window.onload = changeImage();
-
-//fullscreen nav bar
-function openNav() {
-	document.getElementById("mobile-nav").style.width = "100%";
-}
-
-function closeNav() {
-	document.getElementById("mobile-nav").style.width = "0%";
-}
