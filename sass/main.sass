@@ -22,6 +22,8 @@ body
 h1
 	line-height: 1.2
 
+h1,h2,h3,h4,h5,h6
+	font-family: $headings
 a
 	color: $black
 	text-decoration: none
@@ -30,7 +32,8 @@ ul, li
 	list-style: none
 	margin: 0
 	padding: 0
-
+.logo
+	font-family: $title
 /* End of General styles */
 /* Start of Header styles */
 header
@@ -368,8 +371,6 @@ footer
 			right: 35px
 
 @media (max-width: 640px)
-	.menu 
-		display: none
 	.intro
 		justify-items: center
 		align-items: center
@@ -377,17 +378,6 @@ footer
 		.btn
 			display: none
 
-	.hamburger-menu
-		display: flex
-		flex-direction: column
-		.menu-line
-			background: black
-			display: block
-			height: 5px
-			margin: 0 0 7px
-			width: 35px
-			justify-self: center
-			align-self: center
 
 @media (max-width: 640px)
 	.half-block
@@ -429,10 +419,21 @@ footer
 @media (max-width: 880px)
 	.hero
 		grid-template-columns: 1fr 1fr 1fr 1fr
-
-@media (max-width: 880px)
-	.hero h2
-		grid-column: 2 / 4
+		h2
+			grid-column: 2 / 4
+	.menu 
+		display: none
+	.hamburger-menu
+		display: flex
+		flex-direction: column
+		.menu-line
+			background: black
+			display: block
+			height: 5px
+			margin: 0 0 7px
+			width: 35px
+			justify-self: center
+			align-self: center
 
 @media (max-width: 736px) and (min-width: 310px)
 	#hero
@@ -440,31 +441,27 @@ footer
 		background-image: url('images/thomashafeneth-holding-flowers-unsplash.jpg')
 		background-repeat: no-repeat
 		background-size: cover
-		width: auto
+		height: 70vh
 		color: $white
 		padding-right: 20px
 		padding-left: 20px
-
-	#hero h1
-		text-transform: uppercase
-		font-size: calc(2.2rem + 3vw)
-
-	#hero p
-		text-align: center
-
-	#hero button
-		margin: 60px
-		color: $white
-		font-size: 4em
-		background: transparent
-		border: none
-		z-index: 3
-
-	#hero button:hover
-		color: $black
-
-	#hero button:focus
-		outline: 0
+		h1
+			text-transform: uppercase
+			font-size: calc(2.2rem + 3vw)
+			padding-top: 30%
+		p
+			text-align: center
+		button
+			margin: 60px
+			color: $white
+			font-size: 4em
+			background: transparent
+			border: none
+			z-index: 3
+			&:hover
+				color: $black
+			&:focus
+				outline: 0
 
 	.slideshow.navBtns
 		z-index: 3	

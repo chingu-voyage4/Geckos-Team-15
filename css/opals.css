@@ -21,6 +21,9 @@ body {
 h1 {
   line-height: 1.2; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Karla", sans-serif; }
+
 a {
   color: #000000;
   text-decoration: none; }
@@ -29,6 +32,9 @@ ul, li {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+.logo {
+  font-family: "Bowlby One SC", cursive; }
 
 /* End of General styles */
 /* Start of Header styles */
@@ -365,26 +371,11 @@ footer {
     top: 15px;
     right: 35px; } }
 @media (max-width: 640px) {
-  .menu {
-    display: none; }
-
   .intro {
     justify-items: center;
     align-items: center; }
     .intro .btn {
-      display: none; }
-
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column; }
-    .hamburger-menu .menu-line {
-      background: black;
-      display: block;
-      height: 5px;
-      margin: 0 0 7px;
-      width: 35px;
-      justify-self: center;
-      align-self: center; } }
+      display: none; } }
 @media (max-width: 640px) {
   .half-block {
     float: none !important;
@@ -423,41 +414,51 @@ footer {
     flex-wrap: wrap; } }
 @media (max-width: 880px) {
   .hero {
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
-@media (max-width: 880px) {
-  .hero h2 {
-    grid-column: 2/4; } }
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
+    .hero h2 {
+      grid-column: 2/4; }
+
+  .menu {
+    display: none; }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column; }
+    .hamburger-menu .menu-line {
+      background: black;
+      display: block;
+      height: 5px;
+      margin: 0 0 7px;
+      width: 35px;
+      justify-self: center;
+      align-self: center; } }
 @media (max-width: 736px) and (min-width: 310px) {
   #hero {
     display: block;
     background-image: url("images/thomashafeneth-holding-flowers-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: auto;
+    height: 70vh;
     color: #ffffff;
     padding-right: 20px;
     padding-left: 20px; }
-
-  #hero h1 {
-    text-transform: uppercase;
-    font-size: calc(2.2rem + 3vw); }
-
-  #hero p {
-    text-align: center; }
-
-  #hero button {
-    margin: 60px;
-    color: #ffffff;
-    font-size: 4em;
-    background: transparent;
-    border: none;
-    z-index: 3; }
-
-  #hero button:hover {
-    color: #000000; }
-
-  #hero button:focus {
-    outline: 0; }
+    #hero h1 {
+      text-transform: uppercase;
+      font-size: calc(2.2rem + 3vw);
+      padding-top: 30%; }
+    #hero p {
+      text-align: center; }
+    #hero button {
+      margin: 60px;
+      color: #ffffff;
+      font-size: 4em;
+      background: transparent;
+      border: none;
+      z-index: 3; }
+      #hero button:hover {
+        color: #000000; }
+      #hero button:focus {
+        outline: 0; }
 
   .slideshow.navBtns {
     z-index: 3; }
@@ -504,6 +505,10 @@ footer {
     z-index: 3; } }
 body {
   text-align: justify; }
+
+main > * {
+  margin-left: 5vw;
+  margin-right: 5vw; }
 
 .details {
   margin-top: 50px;
