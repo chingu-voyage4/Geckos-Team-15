@@ -34,6 +34,8 @@ ul, li
 	padding: 0
 .logo
 	font-family: $title
+.img-logo
+	margin-right: 8em
 /* End of General styles */
 /* Start of Header styles */
 header
@@ -72,12 +74,14 @@ header
 
 .menu
 	.dropdown-menu
+		width: 130px
 		display: none
 		transition: all 1s ease-in-out
 		li
+			text-align: center
 			box-shadow: 0 4px 16px rgba(20,23,28,.25)
 			background: $white
-			padding: 10px
+			padding: 12px
 			width: 100%
 			&:hover, &:focus
 				background: $illuminating-emerald
@@ -91,6 +95,7 @@ header
 			overflow: hidden
 			box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5)
 			margin-top: -15px
+			margin-left: 0
 			&:after
 				content: ""
 				position: absolute
@@ -178,7 +183,6 @@ header
 .hero
 	display: grid
 	grid-template-columns: 1fr 1fr 1fr
-	grid-template-rows: 70vh 1fr
 	grid-gap: 2em
 	margin: 2rem 0
 	justify-content: center
@@ -235,6 +239,9 @@ header
 		transform: rotate(-10deg)
 		color: $jet
 
+.article-header-1
+	font-size: 2.5em
+	font-weight: bold
 .article-header
 	font-weight: 500
 	font-size: 1rem
@@ -325,6 +332,8 @@ section.article-block
 		p
 			font-size: 0.9rem
 			margin-bottom: 0
+		i
+			color: $thistle
 .actions
 	padding-top: 50px
 	padding-bottom: 10px
@@ -356,6 +365,10 @@ footer
 		color: $white
 		text-decoration: underline
 
+.fa-headphones
+	margin-top: 30px
+	margin-bottom: 30px
+
 @supports (display: grid)
 	.warning
 		display: none
@@ -378,11 +391,13 @@ footer
 		.btn
 			display: none
 
-
-@media (max-width: 640px)
+	.img-logo
+		margin-right: 0
+		
 	.half-block
 		float: none !important
 		width: 100% !important
+
 
 @media (min-width: 500px)
 	.intro,
@@ -396,8 +411,7 @@ footer
 		-webkit-box-align: end
 		-ms-flex-align: end
 		align-items: flex-end
-		h1
-			margin: 0 1em 0 0
+
 	.menu
 		justify-content: center
 

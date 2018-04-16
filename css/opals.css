@@ -36,6 +36,9 @@ ul, li {
 .logo {
   font-family: "Bowlby One SC", cursive; }
 
+.img-logo {
+  margin-right: 8em; }
+
 /* End of General styles */
 /* Start of Header styles */
 header {
@@ -78,12 +81,14 @@ header {
   display: none; }
 
 .menu .dropdown-menu {
+  width: 130px;
   display: none;
   transition: all 1s ease-in-out; }
   .menu .dropdown-menu li {
+    text-align: center;
     box-shadow: 0 4px 16px rgba(20, 23, 28, 0.25);
     background: #ffffff;
-    padding: 10px;
+    padding: 12px;
     width: 100%; }
     .menu .dropdown-menu li:hover, .menu .dropdown-menu li:focus {
       background: #011627; }
@@ -95,7 +100,8 @@ header {
     position: relative;
     overflow: hidden;
     box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
-    margin-top: -15px; }
+    margin-top: -15px;
+    margin-left: 0; }
     .menu .dropdown-menu .tip:after {
       content: "";
       position: absolute;
@@ -180,7 +186,6 @@ header {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 70vh 1fr;
   grid-gap: 2em;
   margin: 2rem 0;
   justify-content: center;
@@ -236,6 +241,10 @@ header {
   .row .fa-bullhorn {
     transform: rotate(-10deg);
     color: #011627; }
+
+.article-header-1 {
+  font-size: 2.5em;
+  font-weight: bold; }
 
 .article-header {
   font-weight: 500;
@@ -327,6 +336,8 @@ section.article-block {
     .talking-points div p {
       font-size: 0.9rem;
       margin-bottom: 0; }
+    .talking-points div i {
+      color: #b7014c; }
 
 .actions {
   padding-top: 50px;
@@ -360,6 +371,10 @@ footer {
     color: #ffffff;
     text-decoration: underline; }
 
+.fa-headphones {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
 @supports (display: grid) {
   .warning {
     display: none; } }
@@ -375,8 +390,11 @@ footer {
     justify-items: center;
     align-items: center; }
     .intro .btn {
-      display: none; } }
-@media (max-width: 640px) {
+      display: none; }
+
+  .img-logo {
+    margin-right: 0; }
+
   .half-block {
     float: none !important;
     width: 100% !important; } }
@@ -392,9 +410,6 @@ footer {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end; }
-    .intro h1,
-    .menu h1 {
-      margin: 0 1em 0 0; }
 
   .menu {
     justify-content: center; } }
@@ -505,6 +520,11 @@ footer {
     z-index: 3; } }
 body {
   text-align: justify; }
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold; }
 
 main > * {
   margin-left: 5vw;

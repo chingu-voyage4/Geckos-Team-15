@@ -1,7 +1,8 @@
 @import main.sass
+@import '_variables'
 
 main
-	text-align: justify
+	text-align: left
 	h2
 		text-align: center
 		font-size: 2em
@@ -10,7 +11,7 @@ main > *
 	margin-left: 5vw
 	margin-right: 5vw
 main section
-	border-bottom: 2px solid $thistle
+	border-bottom: 12px solid $thistle
 main section:last-child
 	border-bottom: none
 
@@ -18,22 +19,28 @@ main section:last-child
 	margin-top: 70px
 	margin-bottom: 70px
 	border: none
+	background: $illuminating-emerald
+	color: $white
+	height: 30vh
+	text-align: center
 	h1
 		font-size: 2.5em
 		margin-bottom: 10px
+		padding-top: 6%
+		font-weight: bold
 	p
 		margin: 10px 0
-	h1,
-	p
-		font-weight: bold
+		font-size: 0.8em
+
 
 #history,
 #objectives
 	margin-top: 70px
 	margin-bottom: 70px
 	h1
-		font-size: 1.5em
-		margin-bottom: 10px
+		font-size: 3em
+		margin-bottom: 20px
+		font-weight: bold
 	p
 		margin: 10px 0
 
@@ -48,8 +55,10 @@ main section:last-child
 		font-size: 0.9em
 
 #objectives
-	ol li
-		list-style-type: square 
+	ol 
+		margin-left: 30px
+		li
+			list-style-type: square 
 
 #directors,
 #advisors
