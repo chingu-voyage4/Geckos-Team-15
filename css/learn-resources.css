@@ -535,6 +535,15 @@ main section:last-child {
   margin-top: 70px;
   padding-bottom: 50px; }
 
+.resource-info h2 {
+  color: #011627;
+  font-weight: bold;
+  font-size: 1.3em; }
+.resource-info a {
+  color: #b7014c; }
+  .resource-info a:visited {
+    color: #48BF84; }
+
 .resources-nav {
   text-align: center;
   margin-bottom: 50px;
@@ -551,5 +560,21 @@ main section:last-child {
   padding: 10px; }
   .resources-nav a:hover {
     background-color: #61d095; }
+
+article div {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  padding-bottom: 22px; }
+
+@media (max-width: 880px) {
+  main {
+    text-align: left; }
+
+  .resource-info h2 {
+    font-size: 1em; }
+    .resource-info h2 a {
+      font-size: 0.75em; }
+  .resource-info p {
+    font-size: 0.9em; } }
 
 /*# sourceMappingURL=learn-resources.css.map */
