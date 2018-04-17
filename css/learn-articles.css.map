@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": ";AAYA,aAAa;EACZ,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;;AAEpB,OAAO;EACN,aAAa,EAAE,IAAI;EACnB,YAAI;IACH,OAAO,EAAE,IAAI",
+"sources": ["../sass/learn-articles.sass"],
 "names": [],
 "file": "learn-articles.css"
 }
