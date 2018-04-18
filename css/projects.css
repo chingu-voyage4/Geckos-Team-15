@@ -7,7 +7,9 @@ main > * {
   grid-template-rows: 30vh;
   padding-bottom: 2em;
   background: #011627;
-  color: #ffffff; }
+  color: #ffffff;
+  margin-left: 5vw;
+  margin-right: 5vw; }
   .hero h1 {
     grid-row: 1; }
   .hero span {
@@ -26,7 +28,7 @@ main > * {
     list-style-type: square;
     margin: 10px 30px; }
   .details article {
-    margin-bottom: 10px; }
+    margin-bottom: 30px; }
     .details article p {
       padding-left: 45px; }
 

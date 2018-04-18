@@ -1,3 +1,11 @@
+/* Start of General styles */
+.article-body {
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
+article {
+  margin-bottom: 35px; }
+  article .btn {
+    padding: 10px; }
 
 /*# sourceMappingURL=learn-articles.css.map */

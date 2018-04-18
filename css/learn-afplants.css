@@ -261,7 +261,7 @@ section.article-block article {
   font-size: 0.9rem; }
 
 .load-more {
-  color: #b7014c;
+  color: #011627;
   font-size: 0.9rem; }
 
 .hide {
@@ -518,11 +518,13 @@ footer {
 
   .slideshow.navBtns {
     z-index: 3; } }
+/* Start of General styles */
 body {
   text-align: justify; }
 
 h1 {
-  margin-top: 25px; }
+  margin-top: 25px;
+  font-size: 2em; }
 
 #resource-list {
   margin-top: 50px; }
@@ -532,8 +534,7 @@ h1 {
 
 .resources-nav {
   text-align: center;
-  border-top: 2px solid #E0BAD7;
-  border-bottom: 2px solid #E0BAD7;
+  border-bottom: 12px solid #b7014c;
   padding: 25px; }
 
 .hide {
@@ -545,42 +546,13 @@ h1 {
 .resources-nav span + span {
   margin-left: 2em; }
 
-.resources-nav a:hover {
-  background-color: #61d095; }
+.resources-nav a {
+  padding: 10px; }
+  .resources-nav a:hover {
+    background-color: #61d095; }
 
 #article-header {
   color: #48bf84; }
-
-article p {
-  margin-bottom: 25px; }
-
-article:nth-of-type(2) {
-  display: flex;
-  justify-content: space-around; }
-  article:nth-of-type(2) img {
-    width: 50%;
-    height: 70%;
-    margin-top: 50px;
-    margin-left: 15px; }
-
-article:nth-of-type(3) {
-  display: flex;
-  justify-content: space-around; }
-  article:nth-of-type(3) img {
-    width: 20%;
-    margin-right: 25px; }
-  article:nth-of-type(3) p {
-    margin-top: 30px; }
-
-article:last-of-type {
-  display: flex;
-  justify-content: space-around; }
-  article:last-of-type img {
-    width: 20%;
-    margin-left: 25px; }
-
-article:nth-of-type(2), article:nth-of-type(3), article:last-of-type {
-  margin-bottom: 50px; }
 
 ol {
   margin-left: 25px; }
@@ -598,6 +570,38 @@ ol {
   .share i {
     width: 55px;
     height: auto; }
+
+#bossy-girl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em;
+  align-items: center; }
+  #bossy-girl img {
+    width: 100%; }
+
+#green-girl,
+#tall-girl {
+  display: grid;
+  grid-gap: 1em;
+  align-items: center;
+  justify-items: center; }
+  #green-girl img,
+  #tall-girl img {
+    width: 100%; }
+
+#green-girl {
+  grid-template-columns: 1fr 2fr; }
+
+#tall-girl {
+  grid-template-columns: 2fr 1fr; }
+
+.disclaimer {
+  background: #011627;
+  color: #ffffff;
+  padding: 10px 150px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 2; }
 
 @media (max-width: 960px) {
   .details article:nth-of-type(2), article:nth-of-type(3), article:last-of-type {

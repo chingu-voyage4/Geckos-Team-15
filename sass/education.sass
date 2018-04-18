@@ -1,8 +1,18 @@
+.hero
+	margin-left: 5vw
+	margin-right: 5vw
+h2
+	font-size: 2em
+	margin-bottom: 2%
 main > * 
 	margin-left: 5vw
 	margin-right: 5vw
 	
 .details
+	article
+		p
+			padding-left: 0
+			line-height: 1.5
 	article:nth-of-type(2)
 		margin-top: 20px
 	h5
@@ -12,29 +22,28 @@ main > *
 		font-size: 0.8em
 		margin-bottom: 25px
 
+#download-pdfs > *
+		text-align: center	
 .materials-grid
 	display: grid
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
-	grid-template-rows: 220px
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+	grid-template-rows: 1fr
 	grid-gap: 1em
 	section
-		display: flex
-		flex-flow: column
-		justify-content: center
-		align-items: center
 		div
 			display: flex
 			flex-direction: column
+			justify-content: center
+			align-items: center
 		p
 			margin-bottom: 20px
 			margin-top: 20px
 		.btn
 			align-self: center
+.resource-title
+	padding-left: 0 !important
 
 @media (max-width: 880px)
-	.details 
-		article > p
-			padding-left: 0
 	.materials-grid section
 		width: 80%
 		display: block
