@@ -573,10 +573,6 @@ footer {
 
   #images {
     grid-template-columns: 1fr;
-    justify-content: center;
-    text-align: center; }
-
-  #map {
-    width: 400px; } }
+    justify-items: center; } }
 
 /*# sourceMappingURL=milkweed-highway.css.map */
