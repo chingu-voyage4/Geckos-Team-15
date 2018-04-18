@@ -192,7 +192,7 @@ header {
   align-items: center;
   position: relative; }
   .hero > * {
-    text-shadow: 2px 2px 2px #000000; }
+    text-shadow: 4px 3px 3px #000000; }
   .hero h1 {
     text-transform: uppercase;
     grid-column: 1/-1;
@@ -450,8 +450,9 @@ footer {
 @media (max-width: 736px) and (min-width: 310px) {
   #hero {
     display: block;
-    background-image: url("images/thomashafeneth-holding-flowers-unsplash.jpg");
+    background-image: url("images/sunflower-and-girl.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     height: 70vh;
     color: #ffffff;
