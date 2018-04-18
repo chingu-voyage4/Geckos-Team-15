@@ -10,6 +10,7 @@ images[1] = "images/shrubs.jpg";
 images[2] = "images/children-playing-outside.jpg";
 images[3] = "images/monarch-butterfly.jpg";
 
+
 // change image
 function changeImage(){
 	document.getElementById("hero").style.backgroundImage = "url("+images[i]+")";
