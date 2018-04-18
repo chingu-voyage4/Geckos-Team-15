@@ -518,6 +518,7 @@ footer {
 
   .slideshow.navBtns {
     z-index: 3; } }
+/* Start of General styles */
 .milkweed-article {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -566,8 +567,16 @@ footer {
 #larva {
   height: 200px; }
 
-@media (max-width: 720px) {
+@media (max-width: 1060px) {
+  .milkweed-article {
+    grid-template-columns: 1fr; }
+
   #images {
-    dispay: block; } }
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center; }
+
+  #map {
+    width: 400px; } }
 
 /*# sourceMappingURL=milkweed-highway.css.map */
