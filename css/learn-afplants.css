@@ -181,178 +181,6 @@ header {
   font-size: 60px; }
 
 /* End of Header styles */
-/* Start of Slideshow styles */
-/*End of Slideshow styles */
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2em;
-  margin: 2rem 0;
-  justify-content: center;
-  align-items: center;
-  position: relative; }
-  .hero > * {
-    text-shadow: 4px 3px 3px #000000; }
-  .hero h1 {
-    text-transform: uppercase;
-    grid-column: 1/-1;
-    grid-row: 2/3;
-    font-size: calc(2.2rem + 3vw);
-    margin-left: 1rem;
-    margin-right: 1rem; }
-  .hero h2 {
-    text-transform: uppercase;
-    border: 1px solid black;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 1rem 0.5rem 0.6rem;
-    font-size: 1.2rem;
-    margin: 0;
-    grid-column: 2/3;
-    grid-row: 4/5;
-    -ms-flex-item-align: self-start;
-    align-self: self-start; }
-  .hero img {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    grid-column: 1/-1;
-    grid-row: 1/4;
-    -o-object-fit: fill;
-    object-fit: fill;
-    opacity: 0.6; }
-  .hero p {
-    grid-column: 1/-1;
-    grid-row: 3/4;
-    -ms-flex-item-align: center;
-    align-self: center;
-    justify-self: center;
-    font-size: calc(0.75rem + 1vw);
-    line-height: 1.5;
-    margin: 0; }
-
-.information {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-gap: 2em;
-  align-items: center; }
-  .information .half-block {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    padding: 10px; }
-  .information .fa-bullhorn {
-    transform: rotate(-10deg);
-    color: #011627; }
-  .information .btn {
-    align-self: center;
-    width: auto; }
-
-.article-header-1 {
-  font-size: 2.5em;
-  font-weight: bold; }
-
-.article-header {
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 2rem;
-  margin-bottom: 10px;
-  margin-top: 10px; }
-
-section.article-block article {
-  display: none; }
-
-.to-top {
-  color: #b7014c;
-  font-size: 0.9rem; }
-
-.load-more {
-  color: #011627;
-  font-size: 0.9rem; }
-
-.hide {
-  display: none; }
-
-.show {
-  display: block !important; }
-
-.year-link.active {
-  font-weight: bold; }
-
-.article-block article {
-  width: 100%; }
-
-section.article-block {
-  display: none; }
-
-.left-align {
-  text-align: left !important; }
-
-.article-body {
-  height: 60px;
-  font-size: 0.8rem;
-  text-align: justify;
-  margin-bottom: 30px; }
-
-.year-nav {
-  display: flex;
-  justify-content: center; }
-
-.year-link {
-  padding: 0 5px 0 5px; }
-
-.marginT5 {
-  margin-top: 5px; }
-
-.marginBottom50 {
-  margin-bottom: 50px; }
-
-.read-more {
-  text-align: left;
-  font-size: 0.8rem;
-  background: #b7014c;
-  border: none; }
-
-.marginT20 {
-  margin-top: 20px; }
-
-.marginT50 {
-  margin-top: 50px; }
-
-.fa-7x {
-  margin-top: 10px;
-  margin-bottom: 20px; }
-
-.talking-points {
-  /* autoprefixer: off */
-  background: #011627;
-  color: #efefef;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap: 2rem; }
-  .talking-points div {
-    /* autoprefixer: off */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1em 5% 1em;
-    padding: 0 1rem; }
-    .talking-points div h2 {
-      margin: 1em 0 0.25em;
-      font-size: 1.8rem; }
-    .talking-points div p {
-      font-size: 0.9rem;
-      margin-bottom: 0; }
-    .talking-points div i {
-      color: #b7014c; }
-
-.actions {
-  padding-top: 50px;
-  padding-bottom: 10px; }
-
-.actions div > * {
-  margin: 10px; }
-
 footer {
   text-align: center;
   width: 90%;
@@ -377,10 +205,6 @@ footer {
   .warning a {
     color: #ffffff;
     text-decoration: underline; }
-
-.fa-headphones {
-  margin-top: 30px;
-  margin-bottom: 30px; }
 
 @supports (display: grid) {
   .warning {
@@ -610,7 +434,7 @@ ol {
 .disclaimer {
   background: #011627;
   color: #ffffff;
-  padding: 10px 150px;
+  padding: 10px 2em;
   margin-top: 30px;
   margin-bottom: 30px;
   line-height: 2; }
@@ -622,5 +446,19 @@ ol {
     .details article:nth-of-type(2) img, article:nth-of-type(3) img, article:last-of-type img {
       margin-top: 30px;
       width: 50%; } }
+@media (max-width: 480px) {
+  .resources-nav span + span {
+    margin-left: 0; }
+
+  .resources-nav span {
+    display: block;
+    margin-bottom: 20px; }
+
+  .share a {
+    margin: 0 5px;
+    padding: 15px 5px; } }
+@media (max-width: 380px) {
+  .details h1 {
+    text-align: left; } }
 
 /*# sourceMappingURL=learn-afplants.css.map */
