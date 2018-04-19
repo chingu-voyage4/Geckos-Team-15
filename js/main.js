@@ -5,10 +5,11 @@ var time = 7500;
 var counter = 0;
 
 // image list
-images[0] = "images/thomashafeneth-holding-flowers-unsplash.jpg";
-images[1] = "images/irenedavila-watering-unsplash.jpg";
-images[2] = "images/markusspiske-tomatoes-unsplash.jpg";
-images[3] = "images/jellekevanooteghem-child-unsplash.jpg";
+images[0] = "images/gardening.jpg";
+images[1] = "images/shrubs.jpg";
+images[2] = "images/children-playing-outside.jpg";
+images[3] = "images/monarch-butterfly.jpg";
+
 
 // change image
 function changeImage(){

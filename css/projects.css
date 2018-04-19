@@ -6,7 +6,7 @@ main > * {
 .hero {
   grid-template-rows: 30vh;
   padding-bottom: 2em;
-  background: #011627;
+  background-color: #011627;
   color: #ffffff;
   margin-left: 5vw;
   margin-right: 5vw; }
@@ -19,7 +19,18 @@ main > * {
     grid-row: 2;
     font-size: 14px; }
   .hero .btn {
-    background: #b7014c; }
+    background: #b7014c;
+    text-shadow: none; }
+
+#take-action {
+  background: url("../images/take-action.jpg");
+  background-size: cover;
+  background-position: center; }
+
+#projects {
+  background: url("../images/projects.jpg");
+  background-size: cover;
+  background-position: center; }
 
 .details {
   text-align: justify;

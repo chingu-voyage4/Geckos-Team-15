@@ -4,30 +4,41 @@
 
 .milkweed-article
 	display: grid
-	grid-template-columns: 25% 25% 25% 25%
-	grid-template-rows: 25% 25% 25% 25
+	grid-template-columns: 9fr 3fr
+	line-height: 1.5
+	grid-gap: 2em
+
+.milkweed-article,
+#map
+	margin-left: 5vw
+	margin-right: 5vw
 
 .milkweed-highway-text
-	grid-column-start: 1
-	grid-column-end: 4
+	grid-columns: 1 / span 9
 	text-align: justify
-	margin: 20px
 	p
 		margin-bottom: 20px
+		font-size: 1em
 	h5
 		margin-top: 10px
 		margin-bottom: 30px
 		font-weight: bold
 
 .aside-section
+	font-size: 0.8em
 	text-align: left
-	margin: 20px
-	background-color: #e0bad7
+	background-color: $jet
+	color: $white
+	h4
+		font-size: 1.3em
+		text-align: center
 	ul
 		margin-bottom: 10px
 		padding: 10px
 	li
 		margin-bottom: 10px
+		a
+			color: $white
 
 #more-info-header
 	margin-top: 10px
@@ -40,9 +51,13 @@
 
 #images
 	display: grid
-	grid-template-columns: 33% 33% 33%
-	justify-content: center
-
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+	justify-items: center
+	img
+		transition: all 0.6s ease-in-out
+		&:hover
+			opacity: 0.6
+			transform: scale(1.1)
 .butterfly
 	width: 300px
 	margin: 10px
@@ -50,13 +65,27 @@
 #larva
 	height: 200px
 
+#map
+	font-size: 0.8em
+	text-align: justify
+	h5
+		text-align: center
+		margin-top: 21px
+		font-size: 1.2em
+		font-weight: bold
+	p
+		margin-top: 10px
+		margin-bottom: 20px
+
 @media (max-width: 1060px)
 	.milkweed-article
 		grid-template-columns: 1fr
 
-	#images
-		grid-template-columns: 1fr
-		justify-items: center
-
-
-
+@media (max-width: 880px)
+	.milkweed-article
+		p
+			font-size: 0.9em
+@media (max-width: 440px)
+	.milkweed-article
+		margin-left: 0
+		margin-right: 0

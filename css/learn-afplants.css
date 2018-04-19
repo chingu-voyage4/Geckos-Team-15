@@ -192,7 +192,7 @@ header {
   align-items: center;
   position: relative; }
   .hero > * {
-    text-shadow: 2px 2px 2px #000000; }
+    text-shadow: 4px 3px 3px #000000; }
   .hero h1 {
     text-transform: uppercase;
     grid-column: 1/-1;
@@ -230,17 +230,22 @@ header {
     line-height: 1.5;
     margin: 0; }
 
-.row {
-  width: 100%;
-  display: inline-block; }
-  .row .half-block {
-    float: left;
-    width: 50%;
+.information {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 2em;
+  align-items: center; }
+  .information .half-block {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
     padding: 10px; }
-  .row .fa-bullhorn {
+  .information .fa-bullhorn {
     transform: rotate(-10deg);
     color: #011627; }
+  .information .btn {
+    align-self: center;
+    width: auto; }
 
 .article-header-1 {
   font-size: 2.5em;
@@ -283,8 +288,10 @@ section.article-block {
   text-align: left !important; }
 
 .article-body {
+  height: 60px;
   font-size: 0.8rem;
-  text-align: justify; }
+  text-align: justify;
+  margin-bottom: 30px; }
 
 .year-nav {
   display: flex;
@@ -446,12 +453,16 @@ footer {
       margin: 0 0 7px;
       width: 35px;
       justify-self: center;
-      align-self: center; } }
+      align-self: center; }
+
+  .article-header-1 {
+    font-size: 0.8em; } }
 @media (max-width: 736px) and (min-width: 310px) {
   #hero {
     display: block;
-    background-image: url("images/thomashafeneth-holding-flowers-unsplash.jpg");
+    background-image: url("images/sunflower-and-girl.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     height: 70vh;
     color: #ffffff;
@@ -481,7 +492,8 @@ footer {
   .navBtns {
     display: none; }
 
-  .talking-points {
+  .talking-points,
+  .information {
     grid-template-columns: 1fr; } }
 @media (max-width: 1600px) and (min-width: 736px) {
   #hero {
