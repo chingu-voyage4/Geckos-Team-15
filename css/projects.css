@@ -3,6 +3,12 @@ main > * {
   margin-left: 5vw;
   margin-right: 5vw; }
 
+h5 {
+  color: #48BF84;
+  font-size: 1.3em;
+  margin-top: 15px;
+  margin-bottom: 10px; }
+
 .hero {
   grid-template-rows: 30vh;
   padding-bottom: 2em;
@@ -42,6 +48,11 @@ main > * {
     margin-bottom: 30px; }
     .details article p {
       padding-left: 45px; }
+
+.link-text {
+  display: block;
+  margin-top: 3px;
+  color: #48BF84; }
 
 @media (max-width: 880px) {
   .hero span {
