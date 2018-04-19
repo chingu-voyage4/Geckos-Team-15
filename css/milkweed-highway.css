@@ -538,7 +538,8 @@ footer {
   grid-gap: 2em; }
 
 .milkweed-article,
-#map {
+#map,
+#images {
   margin-left: 5vw;
   margin-right: 5vw; }
 
@@ -579,21 +580,17 @@ footer {
   font-weight: bold; }
 
 #images {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-items: center; }
+  justify-items: center;
+  grid-gap: 1em; }
   #images img {
-    transition: all 0.6s ease-in-out; }
+    transition: all 0.6s ease-in-out;
+    width: 100%; }
     #images img:hover {
       opacity: 0.6;
       transform: scale(1.1); }
-
-.butterfly {
-  width: 300px;
-  margin: 10px; }
-
-#larva {
-  height: 200px; }
 
 #map {
   font-size: 0.8em;
