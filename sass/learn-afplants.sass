@@ -1,0 +1,108 @@
+@import main.sass
+@import '_variables'
+
+body
+	text-align: justify
+
+h1
+	margin-top: 25px
+	font-size: 2em
+
+#resource-list
+	margin-top: 50px
+
+.details
+	line-height: 1.5
+
+.resources-nav
+	text-align: center
+	border-bottom: 12px solid $thistle
+	padding: 25px
+
+.hide
+	display: none
+
+.show
+	display: block
+
+.resources-nav span + span
+	margin-left: 2em
+
+.resources-nav
+	a
+		padding: 10px
+		&:hover,
+			background-color: #61d095
+
+#article-header
+	color: #48bf84
+
+ol 
+	margin-left: 25px
+	li
+		list-style: square
+
+.share
+	margin-top: 60px
+	margin-bottom: 60px
+	text-align: center
+	a
+		margin: 0 10px
+		background: #61d094
+		padding: 20px
+	i
+		width: 55px
+		height: auto
+#bossy-girl
+	display: grid
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+	grid-gap: 1em
+	align-items: center
+	img
+		width: 100%	
+#green-girl,
+#tall-girl
+	display: grid
+	grid-gap: 1em
+	align-items: center
+	justify-items: center
+	img
+		width: 100%	
+#green-girl
+	grid-template-columns: 1fr 2fr
+#tall-girl
+	grid-template-columns: 2fr 1fr
+
+.disclaimer
+	background: $jet
+	color: $white
+	padding: 10px 2em
+	margin-top: 30px
+	margin-bottom: 30px
+	line-height: 2
+
+@media (max-width: 960px)
+	.details article:nth-of-type(2), article:nth-of-type(3), article:last-of-type
+		flex-direction: column
+		align-items: center
+		img
+			margin-top: 30px
+			width: 50%
+
+@media (max-width: 480px)
+	.resources-nav span + span
+		margin-left: 0
+	.resources-nav
+		span
+			display: block
+			margin-bottom: 20px
+	.share
+		a
+			margin: 0 5px
+			padding: 15px 5px
+
+@media (max-width: 380px)
+	.details
+		h1
+			text-align: left
+

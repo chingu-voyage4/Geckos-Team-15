@@ -1,15 +1,4 @@
-/* Start of General styles */
-$thistle: #E0BAD7
-$medium-aquamarine: #61D095
-$ocean-green: #48BF84
-$illuminating-emerald: #439775
-$japanese-indigo: #2A4747
-$white: #ffffff
-$jet: #333333
-$body-font: 'Roboto', sans-serif
-@mixin display-grid 
-	display: -ms-grid
-	display: grid
+@import '_variables'
 
 *
 	-webkit-box-sizing: border-box
@@ -33,15 +22,20 @@ body
 h1
 	line-height: 1.2
 
+h1,h2,h3,h4,h5,h6
+	font-family: $headings
 a
-	color: black
+	color: $black
 	text-decoration: none
 
 ul, li
 	list-style: none
 	margin: 0
 	padding: 0
-
+.logo
+	font-family: $title
+.img-logo
+	margin-right: 8em
 /* End of General styles */
 /* Start of Header styles */
 header
@@ -80,12 +74,14 @@ header
 
 .menu
 	.dropdown-menu
+		width: 130px
 		display: none
 		transition: all 1s ease-in-out
 		li
+			text-align: center
 			box-shadow: 0 4px 16px rgba(20,23,28,.25)
 			background: $white
-			padding: 10px
+			padding: 12px
 			width: 100%
 			&:hover, &:focus
 				background: $illuminating-emerald
@@ -99,6 +95,7 @@ header
 			overflow: hidden
 			box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5)
 			margin-top: -15px
+			margin-left: 0
 			&:after
 				content: ""
 				position: absolute
@@ -126,6 +123,8 @@ header
 	border: none
 	border-radius: 3px
 	outline: none
+	text-transform: uppercase
+	color: $white
 
 .container
 	width: 90%
@@ -177,311 +176,10 @@ header
 		right: 45px
 		font-size: 60px
 
-@media screen and (max-height: 450px)
-	.overlay
-		a
-			font-size: 20px
-		.closebtn
-			font-size: 40px
-			top: 15px
-			right: 35px
-
-@media (max-width: 640px)
-	.menu 
-		display: none
-	.intro
-		justify-items: center
-		align-items: center
-
-		.btn
-			display: none
-
-	.hamburger-menu
-		display: flex
-		flex-direction: column
-		.menu-line
-			background: black
-			display: block
-			height: 5px
-			margin: 0 0 7px
-			width: 35px
-			justify-self: center
-			align-self: center
-
-@media (max-width: 640px)
-	.half-block
-		float: none !important
-		width: 100% !important
-
-@media (min-width: 500px)
-	.intro,
-	.menu
-		display: -webkit-box
-		display: -ms-flexbox
-		display: flex
-		-webkit-box-pack: justify
-		-ms-flex-pack: justify
-		justify-content: space-between
-		-webkit-box-align: end
-		-ms-flex-align: end
-		align-items: flex-end
-		h1
-			margin: 0 1em 0 0
-	.menu
-		justify-content: center
-
-@media (min-width: 300px)
-	.menu li
-		-webkit-box-flex: 1
-		-ms-flex: auto
-		flex: auto
-		margin-right: 1em
-		padding-right: 1em
-
-@media (min-width: 580px)
-	.menu ul
-		-ms-flex-wrap: wrap
-		flex-wrap: wrap
 /* End of Header styles */
-/* Start of Slideshow styles*/
-
-@media (max-width: 736px) and (min-width: 320px)
-	#hero
-		display: grid
-		grid-template-columns: 1fr 1fr 1fr
-		grid-template-rows: 70vh 1fr
-		justify-content: center
-		align-items: center
-		background-image: url('images/thomashafeneth-holding-flowers-unsplash.jpg')
-		background-repeat: no-repeat
-		background-size: cover
-		width: auto
-
-	#hero h1
-		text-transform: uppercase
-		font-size: calc(2.2rem + 3vw)
-
-	#hero p
-		text-align: center
-
-	#hero button
-		margin: 60px
-		background-color: rgba(224, 186, 215, 0.7)
-		color: rgba(0, 0, 0, 0.7)
-		font-size: 32px
-		border-radius: 20px
-
-	#hero button:hover
-		background-color: #e0bad7
-		color: black
-
-	#hero button:focus
-		outline: 0
-
-	.caption
-		background-color: rgba(72, 191, 132, 0.7)
-
-	.navBtns
-		visibility: hidden
-
-@media (max-width: 1600px) and (min-width: 736px)
-	#hero
-		display: grid
-		grid-template-columns: 1fr 1fr 1fr
-		grid-template-rows: 70vh 1fr
-		justify-content: center
-		align-items: center
-		background-image: url('images/thomashafeneth-holding-flowers-unsplash.jpg')
-		background-repeat: no-repeat
-		background-size: cover
-		width: auto
-
-	#hero h1
-		text-transform: uppercase
-		font-size: calc(2.2rem + 3vw)
-
-	#hero p
-		text-align: center
-
-	#hero button
-		margin: 60px
-		background-color: rgba(224, 186, 215, 0.7)
-		color: rgba(0, 0, 0, 0.7)
-		font-size: 32px
-		border-radius: 20px
-
-	#hero button:hover
-		background-color: #e0bad7
-		color: black
-
-	#hero button:focus
-		outline: 0
-
-	.caption
-		background-color: rgba(72, 191, 132, 0.7)
-
-/*End of Slideshow styles*/
-
-.hero
-	display: grid
-	grid-template-columns: 1fr 1fr 1fr
-	grid-template-rows: 70vh 1fr
-	grid-gap: 2em
-	margin: 2rem 0
-	justify-content: center
-	align-items: center
-	h1
-		text-transform: uppercase
-		grid-column: 1 / -1
-		grid-row: 2 / 3
-		font-size: calc(2.2rem + 3vw)
-		margin-left: 1rem
-		margin-right: 1rem
-	h2
-		text-transform: uppercase
-		border: 1px solid black
-		background: rgba(255, 255, 255, 0.6)
-		padding: 1rem 0.5rem 0.6rem
-		font-size: 1.2rem
-		margin: 0
-		grid-column: 2 / 3
-		grid-row: 4 / 5
-		-ms-flex-item-align: self-start
-		align-self: self-start
-	img
-		width: 100%
-		height: 100%
-		z-index: -1
-		grid-column: 1 / -1
-		grid-row: 1 / 4
-		-o-object-fit: fill
-		object-fit: fill
-		opacity: 0.6
-	p
-		grid-column: 1 / -1
-		grid-row: 3 / 4
-		-ms-flex-item-align: center
-		align-self: center
-		justify-self: center
-		font-size: calc(0.75rem + 1vw)
-		line-height: 1.5
-		margin: 0
-
-.row
-	width: 100%
-	display: inline-block
-	.half-block
-		float: left
-		width: 50%
-		margin-bottom: 20px
-		padding: 10px
-
-.article-header
-	font-weight: 500
-	font-size: 1rem
-	line-height: 2rem
-	margin-bottom: 10px
-	margin-top: 10px
-
-section.article-block article
-	display: none
-
-.to-top
-	color: $medium-aquamarine
-	font-size: 0.9rem
-
-.load-more
-	color: $medium-aquamarine
-	font-size: 0.9rem
-	
-.hide
-	display: none
-
-.show
-	display: block !important
-
-.year-link.active
-	font-weight: bold
-
-.article-block article
-	width: 100%
-
-section.article-block
-	display: none
-
-.left-align
-	text-align: left !important
-
-.article-body
-	font-size: 0.8rem
-	text-align: justify
-
-.year-nav
-	display: flex
-	justify-content: center
-
-.year-link
-	padding: 0 5px 0 5px
-
-.marginT5
-	margin-top: 5px
-
-.marginBottom50
-	margin-bottom: 50px
-
-.read-more
-	text-align: left
-	font-size: 0.8rem
-	background: $medium-aquamarine
-	border: none
-
-.marginT20
-	margin-top: 20px
-
-.marginT50
-	margin-top: 50px
-
-@media (max-width: 880px)
-	.hero
-		grid-template-columns: 1fr 1fr 1fr 1fr
-
-@media (max-width: 880px)
-	.hero h2
-		grid-column: 2 / 4
-
-.talking-points
-	/* autoprefixer: off
-	background: #191919
-	color: #efefef
-	display: grid
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
-	grid-gap: 2rem
-	div
-		/* autoprefixer: off
-		display: flex
-		flex-direction: column
-		justify-content: center
-		align-items: center
-		margin: 1em 5% 1em
-		padding: 0 1rem
-		h2
-			margin: 1em 0 0.25em
-			font-size: 1.8rem
-		img
-			-webkit-box-ordinal-group: 0
-			-ms-flex-order: -1
-			order: -1
-			max-width: 100px
-		p
-			font-size: 0.9rem
-			margin-bottom: 0
-.actions
-	padding-top: 50px
-	padding-bottom: 10px
-.actions div > *
-	margin: 10px
 
 footer
+	text-align: center
 	width: 90%
 	margin-top: 1rem
 	margin-left: 5vw
@@ -502,9 +200,162 @@ footer
 	text-align: left
 	margin-bottom: 1em
 	a
-		color: white
+		color: $white
 		text-decoration: underline
+
 
 @supports (display: grid)
 	.warning
 		display: none
+
+
+@media screen and (max-height: 450px)
+	.overlay
+		a
+			font-size: 20px
+		.closebtn
+			font-size: 40px
+			top: 15px
+			right: 35px
+
+@media (max-width: 640px)
+	.intro
+		justify-items: center
+		align-items: center
+
+		.btn
+			display: none
+
+	.img-logo
+		margin-right: 0
+		
+	.half-block
+		float: none !important
+		width: 100% !important
+
+
+@media (min-width: 500px)
+	.intro,
+	.menu
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-pack: justify
+		-ms-flex-pack: justify
+		justify-content: space-between
+		-webkit-box-align: end
+		-ms-flex-align: end
+		align-items: flex-end
+
+	.menu
+		justify-content: center
+
+@media (min-width: 300px)
+	#hero
+		color: $white
+	.menu li
+		-webkit-box-flex: 1
+		-ms-flex: auto
+		flex: auto
+		margin-right: 1em
+		padding-right: 1em
+
+@media (min-width: 580px)
+	.menu ul
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+
+@media (max-width: 880px)
+	.hero
+		grid-template-columns: 1fr 1fr 1fr 1fr
+		h2
+			grid-column: 2 / 4
+	.menu 
+		display: none
+	.hamburger-menu
+		display: flex
+		flex-direction: column
+		.menu-line
+			background: black
+			display: block
+			height: 5px
+			margin: 0 0 7px
+			width: 35px
+			justify-self: center
+			align-self: center
+	.article-header-1
+		font-size: 0.8em
+
+
+@media (max-width: 736px) and (min-width: 310px)
+	#hero
+		display: block
+		background-image: url('images/sunflower-and-girl.jpg')
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		height: 70vh
+		color: $white
+		padding-right: 20px
+		padding-left: 20px
+		h1
+			text-transform: uppercase
+			font-size: calc(2.2rem + 3vw)
+			padding-top: 30%
+		p
+			text-align: center
+		button
+			margin: 60px
+			color: $white
+			font-size: 4em
+			background: transparent
+			border: none
+			z-index: 3
+			&:hover
+				color: $black
+			&:focus
+				outline: 0
+
+	.slideshow.navBtns
+		z-index: 3	
+	.navBtns
+		display: none
+	.talking-points,
+	.information
+		grid-template-columns: 1fr
+
+@media (max-width: 1600px) and (min-width: 736px)
+	#hero
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		grid-template-rows: 70vh 1fr
+		justify-content: center
+		align-items: center
+		background-image: url('images/thomashafeneth-holding-flowers-unsplash.jpg')
+		background-repeat: no-repeat
+		background-size: cover
+		width: auto
+		color: $white
+
+	#hero h1
+		text-transform: uppercase
+		font-size: calc(2.2rem + 3vw)
+
+	#hero p
+		text-align: center
+
+	#hero button
+		color: $white
+		font-size: 4em
+		background: transparent
+		border: none
+		z-index: 3
+
+	#hero button:hover
+		color: $black
+
+	#hero button:focus
+		outline: 0
+
+	.slideshow.navBtns
+		z-index: 3	

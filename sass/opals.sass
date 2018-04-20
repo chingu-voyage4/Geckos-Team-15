@@ -1,0 +1,81 @@
+@import main.sass
+
+body
+	text-align: justify
+h1
+	font-size: 3em
+	margin-bottom: 20px
+	font-weight: bold
+	
+main > * 
+	margin-left: 5vw
+	margin-right: 5vw
+
+.details
+	margin-top: 50px
+	line-height: 1.5
+
+article
+	p
+		margin-bottom: 25px
+	img
+		width: 40%
+		height: 60%
+
+article:nth-of-type(2)
+	display: flex
+	justify-content: space-around
+
+article:nth-of-type(2), article:nth-of-type(3)
+	margin-bottom: 50px
+
+article:last-of-type
+	height: fit-content
+	margin-bottom: 10em
+	text-align: center
+	img
+		width: 70%	
+
+ol 
+	margin-left: 25px
+	li
+		list-style: square
+.share
+	margin-top: 60px
+	margin-bottom: 60px
+	text-align: center
+	a
+		margin: 0 10px
+		background: #61d094
+		padding: 20px
+	i
+		width: 55px
+		height: auto
+
+@media (max-width: 960px)
+	.details article:nth-of-type(2)
+		flex-direction: column
+		align-items: center
+		img
+			margin-top: 30px
+@media (max-width: 880px)
+	p, ol
+		font-size: 12px
+		line-height: 1.5
+	.share
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		justify-items: center
+		a
+			width: 65px
+		i
+			width: 0%
+			margin-right: 10px
+
+@media (max-width: 580px)
+	article
+		img
+			width: 60%
+		&:last-of-type
+			img
+				width: 90%

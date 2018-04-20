@@ -1,7 +1,8 @@
 @import main.sass
+@import '_variables'
 
 main
-	text-align: justify
+	text-align: left
 	h2
 		text-align: center
 		font-size: 2em
@@ -10,16 +11,40 @@ main > *
 	margin-left: 5vw
 	margin-right: 5vw
 main section
-	border-bottom: 2px solid #E0BAD7
+	border-bottom: 12px solid $thistle
 main section:last-child
 	border-bottom: none
+
+#intro
+	margin-top: 70px
+	margin-bottom: 70px
+	border: none
+	background-color: $illuminating-emerald
+	background: url('../images/trees.jpg')
+	background-size: cover
+	background-position: center
+	color: $white
+	text-shadow: 4px 3px 3px $black
+	height: 30vh
+	text-align: center
+	h1
+		font-size: 2.5em
+		margin-bottom: 10px
+		padding-top: 6%
+		font-weight: bold
+	p
+		margin: 10px 0
+		font-size: 0.8em
+
+
 #history,
 #objectives
 	margin-top: 70px
 	margin-bottom: 70px
 	h1
-		font-size: 1.5em
-		margin-bottom: 10px
+		font-size: 3em
+		margin-bottom: 20px
+		font-weight: bold
 	p
 		margin: 10px 0
 
@@ -34,8 +59,10 @@ main section:last-child
 		font-size: 0.9em
 
 #objectives
-	ol li
-		list-style-type: square 
+	ol 
+		margin-left: 30px
+		li
+			list-style-type: square 
 
 #directors,
 #advisors
@@ -89,4 +116,10 @@ main section:last-child
 		padding-left: 10px
 		padding-right: 10px
 		text-align: justify
-	
+
+@media (max-width: 880px)
+	#intro > h1
+		font-weight: normal
+		font-size: 1.6em
+		margin-bottom: 25px
+		text-align: center	

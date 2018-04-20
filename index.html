@@ -7,10 +7,18 @@
 	<title>SAFE Gardening</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
 	<!-- Reset CSS - Meyerweb -->
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/solid.css" integrity="sha384-29Ax2Ao1SMo9Pz5CxU1KMYy+aRLHmOu6hJKgWiViCYpz3f9egAJNwjnKGgr+BXDN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/fontawesome.css" integrity="sha384-Lyz+8VfV0lv38W729WFAmn77iH5OSroyONnUva4+gYaQTic3iI2fnUKtDSpbVf0J" crossorigin="anonymous">
 	<!-- main CSS -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/home-page.css">
 	<!-- favicon -->
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">   
 </head>
@@ -18,9 +26,9 @@
 <body class="container">
 	<header role="header" id="home">
 			<div class="intro">
-				<h1><a href="#" class="logo">SAFE</a></h1>
+				<h1><a href="index.html" class="logo">SAFE Gardening</a></h1>
 				<img src="images/logo-sm.jpg" class="img-logo">
-				<a href="#" class="btn">Donate Now</a>
+				<a href="https://www.paypal.com/donate/?token=__v6T_drRUNioC1Li-GGO_fgP7Y2_Bzx1I0iDLost-Fv7g2Uj48atdt0d6YN6bq28WjTnW&country.x=US&locale.x=US" target="_b" class="btn">Donate Now</a>
 			</div>
 			<a class="hamburger-menu" href="#" onclick="openNav()">
 				<span class="menu-line"></span>
@@ -34,8 +42,8 @@
 					<li><a href="#">Learn</a>
 						<ul class="dropdown-menu">
 								<div class="tip"></div>
-								<li><a href="#">Education</a></li>
-								<li><a href="#">What is OPALS®?</a></li>
+								<li><a href="education.html">Education</a></li>
+								<li><a href="what-is-opals.html">What is OPALS®?</a></li>
 								<li><a href="learn-articles.html">Articles</a></li>
 								<li><a href="learn-resources.html">Resources</a></li>
 								<li><a href="learn-afplants.html">Allergy-friendly Plants</a></li>
@@ -45,7 +53,7 @@
 							<ul class="dropdown-menu">
 								<div class="tip"></div>
 								<li><a href="activities-projects.html">Projects</a></li>
-								<li><a href="#">Milkweed Highway</a></li>
+								<li><a href="milkweed-highway.html">Milkweed Highway</a></li>
 							</ul>
 					</li>
 					<li><a href="take-action.html">Take Action</a></li>
@@ -60,8 +68,8 @@
 						<li><a href="about-safe.html">About SAFE</a></li>
 						<li><a href="#">Learn</a>
 							<ul>
-									<li><a href="#">Education</a></li>
-									<li><a href="#">What is OPALS®?</a></li>
+									<li><a href="education.html">Education</a></li>
+									<li><a href="what-is-opals.html">What is OPALS®?</a></li>
 									<li><a href="learn-articles.html">Articles</a></li>
 									<li><a href="learn-resources.html">Resources</a></li>
 									<li><a href="learn-afplants.html">Allergy-friendly Plants</a></li>
@@ -70,7 +78,7 @@
 						<li><a href="#">Activities</a>
 							<ul>
 									<li><a href="activities-projects.html">Projects</a></li>
-									<li><a href="#">Milkweed Highway</a></li>
+									<li><a href="milkweed-highway.html">Milkweed Highway</a></li>
 								</ul>
 						</li>
 						<li><a href="take-action.html">Take Action</a></li>
@@ -81,8 +89,9 @@
 		
 		<main role="main">
 			<section class="hero" id="hero">
-				<span class="slideshow navBtns">
-						<button id="prevBtn">&#8678;</button>
+<!-- 				<div class="hero-overlay"></div>
+ -->				<span class="slideshow navBtns">
+ <button id="prevBtn"><i class="fas fa-angle-left"></i></button>
 				</span>
 			
 				<span class="caption">
@@ -91,7 +100,7 @@
 				</span>
 
 				<span class="slideshow navBtns">
-						<button id="nextBtn">&#8680;</button>
+						<button id="nextBtn"><i class="fas fa-angle-right"></i></button>
 				</span>
 			</section>
 
@@ -99,58 +108,66 @@
 			<section class="talking-points">
 				<div>
 					<h2>Welcome</h2>
-					<img src="images/world.png" alt="write description">
+					<i class="fab fa-pagelines fa-7x"></i>
 					<p>Please explore our website and find out how we are making gardens and landscapes healthier places by using allergy friendly plants.</p>
 				</div>
 				<div>
 					<h2>Learn</h2>
-					<img src="images/world.png" alt="write description">
-					<p>Please explore our website and find out how we are making gardens and landscapes healthier places by using allergy friendly plants.</p>				</div>
+					<i class="fab fa-leanpub fa-7x"></i>
+					<p>Please join us in the fight to make our environment better, safer, and healthier for everyone, especially those affected by allergies and asthma.</p>				</div>
 				<div>
 					<h2>Donate</h2>
-					<img src="images/world.png" alt="write description">
-					<p>Please explore our website and find out how we are making gardens and landscapes healthier places by using allergy friendly plants.</p>
+					<i class="fas fa-donate fa-7x"></i>
+					<p>Help SAFE Gardening by donating to our organization. Funds are used to provide education regarding allergy friendly plants and to purchase allergy friendly plants to be planted to improve the environment. <a href="https://www.paypal.com/donate/?token=__v6T_drRUNioC1Li-GGO_fgP7Y2_Bzx1I0iDLost-Fv7g2Uj48atdt0d6YN6bq28WjTnW&country.x=US&locale.x=US" target="_b" class="link-text">Donate Now</a></p>
 				</div>
 			</section>
 
 			<section class="talking-points actions">
 				<div>
-					<h5>Write to us at</h5>
-					<button class="btn">Click here to listen</button>
+					<h5>Contact to us</h5>
+					<a href="mailto:info@safegardening.org" class="btn">Email us</a>
 				</div>
 				<div>
 					<h5>Interested in joining the Milkweed Highway?</h5>
-					<button class="btn">Click here to listen</button>
+					<a href="milkweed-highway.html" class="btn">Click here to join</a>
 				</div>
 			</section>
 
-			<section class="container">
+			<section>
 				<div class="row">
-					<div class = "article-header marginT50">Latest News/Information</div>
+					<h2 class = "article-header-1 marginT50">Latest News/Information</h2>
 				</div>
 
+				<section class="information">
+					<div class="half-block">
+						<div class = "article-header"><a href="#">Trees in the Built Environment</a></div>
+						<i class="fas fa-bullhorn fa-7x"></i>
+						<p class="article-body">Watch the video "Tom Ogren on Trees in the Built Environment." There's so much to learn from this interesting and informative video online.</p>
+						<a href="https://vimeo.com/259666480" target="_blank" class="btn">Click here to watch</a>
+					</div>
+					<div class="half-block">
+						<div class = "article-header"><a href="#">Not to be sniffed at</a></div>
+						<i class="fas fa-bullhorn fa-7x"></i>
+						<p class="article-body">Look for an article titled "Not to be sniffed at" in the March 2018 issue of The Garden.   The Garden is published by the Royal Horticultural Society (RHS) in the United Kingdom.  The magazine features articles on practical gardening and provides information on plants, events and shows.</p>
+						<a href="https://www.rhs.org.uk/about-the-rhs/publications/magazines/the-garden/2018-issues/march/allergen-planting-not-to-be-sniffed-at.pdf" target="_blank" class="btn">Click here to read</a>
+					</div>
+					<div class="half-block">
+						<div class = "article-header"><a href="#">Best Allergies Books 2017</a></div>
+						<i class="fas fa-bullhorn fa-7x"></i>
+						<p class="article-body">The "Allergy-Fighting Garden" book is on the list of recommended books on allergies for 2017.  Healthline put together a list of books to check out.</p>
+						<a href="https://www.healthline.com/health/allergies/best-books-allergies" target="_blank" class="btn">Learn more</a>
+					</div>
+					<div class="half-block">
+						<div class = "article-header"><a href="#">Allergry Trapping Hedges</a></div>
+						<i class="fas fa-bullhorn fa-7x"></i>
+						<p class="article-body">Information on Allergry Trapping Hedges has been added to our "Allergry Friendly Plants" page under the LEARN heading.  There are three hedge plants highlighted - Big Glossy Girl, Green Girl, and Tall Girl.  To learn about these exciting allergy friendly hedges.</p>
+						<a href="learn-afplants.html" class="btn">Learn more</a>
+					</div>
+				</section>
+
 				<div class="row">
-					<div class="half-block">
-						<div class = "article-header"><a href="#">Article 1</a></div>
-						<p class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nunc varius, bibendum tortor aiaculis mauris. Phasellus venenatis magna vel purus efficitur malesuada. Integer in metus id neque vehicula dictum vel nec augue. Mauris a magna eget enim feugiat ullamcorper non sed purus. Aliquam erat volutpat.</p>
-					</div>
-					<div class="half-block">
-						<div class = "article-header"><a href="#">Article 2</a></div>
-						<p class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nunc varius, bibendum tortor a, iaculis mauris. Phasellus venenatis magna vel purus efficitur malesuada. Integer in metus id neque vehicula dictum vel nec augue. Mauris a magna eget enim feugiat ullamcorper non sed purus. Aliquam erat volutpat.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="half-block">
-						<div class = "article-header"><a href="#">Article 3</a></div>
-						<p class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nunc varius, bibendum tortor a, iaculis mauris. Phasellus venenatis magna vel purus efficitur malesuada. Integer in metus id neque vehicula dictum vel nec augue. Mauris a magna eget enim feugiat ullamcorper non sed purus. Aliquam erat volutpat.</p>
-					</div>
-					<div class="half-block">
-						<div class = "article-header"><a href="#">Article 4</a></div>
-						<p class="article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a nunc varius, bibendum tortor a, iaculis mauris. Phasellus venenatis magna vel purus efficitur malesuada. Integer in metus id neque vehicula dictum vel nec augue. Mauris a magna eget enim feugiat ullamcorper non sed purus. Aliquam erat volutpat.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class = "article-header">POD: The Allergy-Fighting Garden</div>
+					<div class = "article-header-1">POD: The Allergy-Fighting Garden</div>
+					<i class="fas fa-headphones fa-5x"></i>
 					<p class="article-body">Enjoy a podcast with guest Tom Ogren who provides important information about plants that cause allergies and asthma
 						and how to create beautiful landscapes that are non-allergenic. Go to the podcast titled "Allergy-Fighting Garden" atTova's Garden.
 					</p>
@@ -163,6 +180,8 @@
 			<p><span class="cp">&copy; </span> SAFE Gardening</p>
 		</footer>
 
+	<script type="text/javascript" src="js/date.js"></script>	
+	<script type="text/javascript" src="js/nav.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

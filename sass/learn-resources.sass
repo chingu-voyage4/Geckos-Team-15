@@ -8,15 +8,60 @@ main
 main > *
 	margin-left: 5vw
 	margin-right: 5vw
-main section
-	border-bottom: 2px solid #E0BAD7
 main section:last-child
 	border-bottom: none
+
 #intro
 	margin-top: 70px
-	margin-bottom: 70px
-	padding-bottom: 65px
-#resources
+	padding-bottom: 50px
+
+.hide
+	display:none
+
+.show
+	display:block
+
+.resource-link
+	.active
+		font-weight:bold
+.resource-info
+	h2
+		color: $jet
+		font-weight: bold
+		font-size: 1.3em
+	a
+		color: $thistle
+		&:visited
+			color: $ocean-green
+.resources-nav
+	text-align: center
+	margin-bottom: 50px
 	display: grid
-	grid-template-columns: repeat(5, 1fr)
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
 	grid-gap: 10px
+	justify-items: center
+	align-content: center
+
+.resources-nav span + span
+	margin-left: 2em
+
+.resources-nav a
+	padding: 10px
+	&:hover
+		background-color: #61d095
+article
+	div
+		margin-bottom: 20px
+		line-height: 1.5
+		padding-bottom: 22px
+
+@media (max-width: 880px)
+	main
+		text-align: left
+	.resource-info
+		h2
+			font-size: 1em
+			a
+				font-size: 0.75em	
+		p
+			font-size: 0.9em

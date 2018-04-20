@@ -1,8 +1,3 @@
-//Auto update footer copyright year
-var copy = document.querySelector(".cp");
-var year = new Date().getFullYear();
-copy.textContent += year;
-
 //start of slideshow banner js
 var i = 0;
 var images = [];
@@ -10,10 +5,11 @@ var time = 7500;
 var counter = 0;
 
 // image list
-images[0] = "images/thomashafeneth-holding-flowers-unsplash.jpg";
-images[1] = "images/irenedavila-watering-unsplash.jpg";
-images[2] = "images/markusspiske-tomatoes-unsplash.jpg";
-images[3] = "images/jellekevanooteghem-child-unsplash.jpg";
+images[0] = "images/gardening.jpg";
+images[1] = "images/shrubs.jpg";
+images[2] = "images/children-playing-outside.jpg";
+images[3] = "images/monarch-butterfly.jpg";
+
 
 // change image
 function changeImage(){
@@ -48,12 +44,3 @@ document.getElementById("prevBtn").addEventListener("click", function() {
 });
 
 window.onload = changeImage();
-
-//fullscreen nav bar
-function openNav() {
-	document.getElementById("mobile-nav").style.width = "100%";
-}
-
-function closeNav() {
-	document.getElementById("mobile-nav").style.width = "0%";
-}
