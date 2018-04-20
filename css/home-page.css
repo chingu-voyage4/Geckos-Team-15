@@ -49,7 +49,7 @@
 
 .information {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2em;
   align-items: center; }
   .information .half-block {
@@ -144,7 +144,7 @@ section.article-block {
   background: #011627;
   color: #efefef;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2rem; }
   .talking-points div {
     /* autoprefixer: off */
@@ -178,5 +178,9 @@ section.article-block {
   display: block;
   margin-top: 3px;
   color: #48BF84; }
+
+@media (max-width: 730px) {
+  .article-header-1 {
+    font-size: 1.5em; } }
 
 /*# sourceMappingURL=home-page.css.map */
